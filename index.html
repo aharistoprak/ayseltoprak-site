@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Aysel Toprak — Tezhip · Ebru · Minyatür · Çini</title>
+<link rel="canonical" href="https://ayseltoprak.com/">
+<meta property="og:url" content="https://ayseltoprak.com/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ayseltoprak.com/images/og.jpg">
+<meta name="description" content="Aysel Toprak — master of Ottoman illumination (tezhip), ebru marbling, miniature painting and hand-painted çini. Original works, exhibitions and workshops in Philadelphia, PA.">
+<meta property="og:title" content="Aysel Toprak — Tezhip · Ebru · Minyatür · Çini">
+<meta property="og:description" content="Master of Ottoman illumination. Original works, exhibitions and workshops.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap">
+<style>
+:root{
+  --bg:#f6f1e7; --bg-alt:#efe7d6; --surface:#fbf8f1;
+  --fg:#1d2233; --muted:#5d5a52; --line:#d9ccb0;
+  --gold:#9a7a2e; --gold-soft:#c9a84c;
+  --navy:#16203a; --on-navy:#f3ead6; --on-navy-muted:#c4b893;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#10162a; --bg-alt:#0b1020; --surface:#161e36;
+  --fg:#efe6d2; --muted:#a9a18c; --line:#2e3756;
+  --gold:#d4b25c; --gold-soft:#c9a84c;
+  --navy:#0a0f1e; --on-navy:#f3ead6; --on-navy-muted:#b9ad88; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#10162a; --bg-alt:#0b1020; --surface:#161e36;
+  --fg:#efe6d2; --muted:#a9a18c; --line:#2e3756;
+  --gold:#d4b25c; --gold-soft:#c9a84c;
+  --navy:#0a0f1e; --on-navy:#f3ead6; --on-navy-muted:#b9ad88; color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:"Jost",system-ui,sans-serif;font-weight:300;font-size:17px;line-height:1.7}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.1;text-wrap:balance;margin:0}
+p{margin:0}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+.eyebrow{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:500}
+.rule{display:flex;align-items:center;gap:14px;color:var(--gold-soft)}
+.rule::before,.rule::after{content:"";height:1px;flex:1;background:currentColor;opacity:.5}
+.rule svg{width:18px;height:18px}
+
+/* nav */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--navy)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--navy) 94%,transparent);backdrop-filter:blur(6px);color:var(--on-navy)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.brand{font-family:"Cormorant Garamond",serif;font-size:22px;letter-spacing:.06em}
+.brand small{display:block;font-family:"Jost",sans-serif;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--on-navy-muted)}
+nav ul{list-style:none;display:flex;gap:26px;margin:0;padding:0;font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+nav a{text-decoration:none;color:var(--on-navy-muted);transition:color .2s}
+nav a:hover{color:var(--gold-soft)}
+@media (max-width:760px){nav .wrap{flex-wrap:wrap;row-gap:10px}nav ul{width:100%;overflow-x:auto;gap:20px;font-size:11px;padding-bottom:2px;scrollbar-width:none}nav ul::-webkit-scrollbar{display:none}}
+
+/* hero */
+.hero{background:var(--navy);color:var(--on-navy);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding-block:72px 88px}
+.hero h1{font-size:clamp(48px,7vw,92px);font-weight:400;letter-spacing:.01em}
+.hero h1 em{font-style:italic;color:var(--gold-soft)}
+.hero .lede{margin-top:24px;max-width:46ch;color:var(--on-navy-muted);font-size:18px}
+.hero .tr{margin-top:10px;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:20px;color:var(--on-navy-muted)}
+.hero .cta{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 26px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;text-decoration:none;border:1px solid var(--gold-soft);color:var(--on-navy);transition:background .2s,color .2s}
+.btn.solid{background:var(--gold-soft);color:#16203a}
+.btn:hover{background:var(--gold-soft);color:#16203a}
+.hero-art{position:relative;justify-self:center;max-width:460px;width:100%}
+.hero-art .frame{padding:14px;border:1px solid color-mix(in srgb,var(--gold-soft) 60%,transparent);background:color-mix(in srgb,var(--gold-soft) 6%,transparent)}
+.hero-art img{display:block;width:100%;height:auto}
+.hero-art figcaption{margin-top:12px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--on-navy-muted);text-align:center}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:40px;padding-block:48px 64px}}
+
+section{padding-block:96px}
+.head{display:grid;gap:14px;margin-bottom:48px;max-width:640px}
+.head h2{font-size:clamp(36px,5vw,58px)}
+.head p{color:var(--muted)}
+.center{margin-inline:auto;text-align:center}
+
+/* about */
+.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:start}
+.about-photos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.about-photos img{width:100%;height:100%;object-fit:cover;display:block}
+.about-photos .tall{grid-row:span 2;aspect-ratio:3/4.4}
+.about-photos .sq{aspect-ratio:1/1.05}
+.about-text{display:grid;gap:22px;min-width:0}
+.about-text p{max-width:62ch}
+.pull{font-family:"Cormorant Garamond",serif;font-size:28px;font-style:italic;line-height:1.35;color:var(--gold);border-left:2px solid var(--gold-soft);padding-left:22px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:10px}
+.facts div{background:var(--bg);padding:20px 18px}
+.facts b{display:block;font-family:"Cormorant Garamond",serif;font-weight:500;font-size:38px;line-height:1;color:var(--fg)}
+.facts span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:860px){.about{grid-template-columns:1fr;gap:40px}}
+@media (max-width:480px){.facts{grid-template-columns:1fr}}
+
+/* disciplines */
+.disc{background:var(--bg-alt)}
+.disc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.ph{aspect-ratio:4/3;display:grid;place-items:center;background:repeating-linear-gradient(45deg,var(--bg-alt) 0 12px,var(--surface) 12px 24px);color:var(--muted);font-size:11px;letter-spacing:.18em;text-transform:uppercase;border-bottom:1px solid var(--line)}
+.disc-card{background:var(--surface);border:1px solid var(--line);display:flex;flex-direction:column}
+.disc-card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.disc-card .body{padding:26px;display:grid;gap:8px}
+.disc-card h3{font-size:30px}
+.disc-card .tk{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gold);font-size:18px}
+.disc-card p{color:var(--muted);font-size:15.5px}
+@media (max-width:1040px){.disc-grid{grid-template-columns:1fr 1fr}}@media (max-width:560px){.disc-grid{grid-template-columns:1fr}}
+
+/* gallery */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:34px}
+.filters button{font:inherit;font-size:12px;letter-spacing:.18em;text-transform:uppercase;padding:9px 18px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.gallery{columns:3 300px;column-gap:22px}
+.gallery figure{break-inside:avoid;margin:0 0 22px;cursor:zoom-in}
+.gallery img{width:100%;display:block;border:1px solid var(--line);transition:transform .4s ease,box-shadow .4s ease}
+.gallery figure:hover img{transform:translateY(-3px);box-shadow:0 14px 30px -18px rgba(0,0,0,.5)}
+.gallery figcaption{padding-top:10px;display:flex;justify-content:space-between;gap:10px;font-size:14px}
+.gallery figcaption i{font-family:"Cormorant Garamond",serif;font-size:18px;font-style:normal}
+.gallery figcaption span{color:var(--muted);font-size:11px;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;padding-top:4px}
+
+/* exhibitions */
+.exh{background:var(--navy);color:var(--on-navy)}
+.exh .head p{color:var(--on-navy-muted)}
+.exh .eyebrow{color:var(--gold-soft)}
+.exh-grid{display:grid;grid-template-columns:1.4fr 1fr;grid-template-rows:auto auto;gap:16px}
+.exh-grid figure{margin:0;position:relative;overflow:hidden}
+.exh-grid img{width:100%;height:100%;object-fit:cover;display:block}
+.exh-grid .big{grid-row:span 2;aspect-ratio:4/4.3}
+.exh-grid figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 18px 14px;background:linear-gradient(transparent,rgba(8,12,24,.85));font-size:13px;letter-spacing:.06em;color:#f3ead6}
+.exh-list{margin-top:56px;display:grid;gap:0;border-top:1px solid color-mix(in srgb,var(--gold-soft) 35%,transparent)}
+.exh-list div{display:grid;grid-template-columns:120px 1fr auto;gap:20px;padding:20px 0;border-bottom:1px solid color-mix(in srgb,var(--gold-soft) 35%,transparent);align-items:baseline}
+.exh-list b{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:24px;color:var(--gold-soft)}
+.exh-list em{font-style:normal;color:var(--on-navy-muted);font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+.todo{display:inline-block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;border:1px dashed currentColor;padding:2px 8px;opacity:.7;margin-left:8px;vertical-align:middle}
+@media (max-width:760px){.exh-grid{grid-template-columns:1fr}.exh-grid .big{grid-row:auto}.exh-list div{grid-template-columns:1fr;gap:4px}}
+
+/* atelier */
+.atelier{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.atelier img{width:100%;display:block;border:1px solid var(--line)}
+.atelier .txt{display:grid;gap:18px;min-width:0}
+.atelier ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.atelier li{display:flex;gap:14px;align-items:baseline}
+.atelier li::before{content:"◆";color:var(--gold-soft);font-size:10px}
+@media (max-width:860px){.atelier{grid-template-columns:1fr;gap:36px}}
+
+/* contact */
+.contact{background:var(--bg-alt);text-align:center}
+.contact .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px;text-align:left}
+.contact .card{background:var(--surface);border:1px solid var(--line);padding:28px;display:grid;gap:10px;align-content:start}
+.contact .card h3{font-size:26px}
+.contact .card p{color:var(--muted);font-size:15px}
+.contact .card .val{font-size:15px;color:var(--fg);user-select:all;word-break:break-word}
+@media (max-width:860px){.contact .grid{grid-template-columns:1fr}}
+
+footer{background:var(--navy);color:var(--on-navy-muted);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:30px}
+
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(6,9,18,.94);z-index:50;display:flex;align-items:center;justify-content:center;padding:max(24px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(24px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lb figure{margin:0;max-width:min(1000px,100%);display:grid;gap:14px;justify-items:center}
+.lb img{max-height:80vh;width:auto;max-width:100%;border:1px solid #3a3320}
+.lb figcaption{color:#e6dcc4;text-align:center;font-family:"Cormorant Garamond",serif;font-size:22px}
+.lb figcaption span{display:block;font-family:"Jost",sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#a99d7c;margin-top:4px}
+.lb button{position:absolute;background:none;border:1px solid #6c5c32;color:#e6dcc4;width:44px;height:44px;font-size:20px;cursor:pointer}
+.lb .x{top:calc(18px + env(safe-area-inset-top,0px));right:calc(18px + env(safe-area-inset-right,0px))}
+.lb .p{left:calc(18px + env(safe-area-inset-left,0px));top:50%}
+.lb .n{right:calc(18px + env(safe-area-inset-right,0px));top:50%}
+@media (max-width:600px){.lb .p,.lb .n{top:auto;bottom:calc(18px + env(safe-area-inset-bottom,0px))}}
+</style>
+<style>body{margin:0}img{max-width:100%}</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <div class="brand">Aysel Toprak<small>Tezhip · Ebru · Minyatür · Çini</small></div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#exhibitions">Exhibitions</a></li>
+      <li><a href="#atelier">Atelier</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow" style="color:var(--gold-soft)">Master of Ottoman Illumination</div>
+      <h1 style="margin-top:18px">The art of <em>gold</em> on paper</h1>
+      <p class="tr">Kâğıt üzerinde altının sanatı</p>
+      <p class="lede">For more than thirty years, Aysel Toprak has practiced <i>tezhip</i> — the classical Ottoman art of illuminating manuscripts and calligraphy with burnished gold, hand-ground pigments and geometric and floral ornament. Alongside illumination she works in <i>ebru</i> marbling, miniature painting and hand-painted <i>çini</i>.</p>
+      <div class="cta">
+        <a class="btn solid" href="#works">View the Works</a>
+        <a class="btn" href="#contact">Exhibitions &amp; Workshops</a>
+      </div>
+    </div>
+    <figure class="hero-art" style="margin:0">
+      <div class="frame"><img src="images/01-illuminated-panel-with-deep-red-ground-a.jpg" alt="Illuminated panel with deep red ground and burnished gold ornament"></div>
+      <figcaption>Tezhip · gold leaf &amp; natural pigments</figcaption>
+    </figure>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap about">
+    <div class="about-photos">
+      <img class="tall" src="images/02-portrait-of-aysel-toprak.jpg" alt="Portrait of Aysel Toprak">
+      <img class="sq" src="images/03-aysel-toprak.jpg" alt="Aysel Toprak">
+      <img class="sq" src="images/04-aysel-toprak.jpg" alt="Aysel Toprak">
+    </div>
+    <div class="about-text">
+      <div class="eyebrow">The Artist</div>
+      <h2 style="font-size:clamp(36px,5vw,58px)">Aysel Toprak</h2>
+      <p class="pull" title="To be confirmed by the artist">“Tezhip is patience made visible — every leaf of gold is laid by hand, one breath at a time.”<span class="todo" style="font-family:Jost,sans-serif;font-style:normal">quote to confirm</span></p>
+      <p>Aysel Toprak is a Turkish master illuminator (<i>müzehhibe</i>) working in the classical tradition of the Ottoman court ateliers. Her practice centers on <i>tezhip</i> (illumination) — including the illumination of <i>hilye-i şerif</i> and of calligraphic panels written by master calligraphers — together with <i>ebru</i> (marbling), <i>minyatür</i> (miniature painting) and hand-painted <i>çini</i> ceramics.</p>
+      <p>Working with 22–24 karat gold leaf, shell gold and mineral pigments prepared by hand, she builds each composition through the traditional sequence of pattern drawing, pouncing, gilding, burnishing and fine outlining with brushes of a few hairs. Her work has been shown in exhibitions in Türkiye and is held in private collections.</p>
+      <p style="color:var(--muted);font-size:15px">Detailed biography, education and master lineage (<i>icazet</i>) will be added from the artist information form.<span class="todo">to complete</span></p>
+      <div class="facts">
+        <div><b>30+</b><span>Years of practice</span></div>
+        <div><b>4</b><span>Classical arts</span></div>
+        <div><b>22–24k</b><span>Gold leaf</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="disc">
+  <div class="wrap">
+    <div class="head center">
+      <div class="rule"><svg viewBox="0 0 20 20"><path d="M10 1l3 6 6 3-6 3-3 6-3-6-6-3 6-3z" fill="currentColor"/></svg></div>
+      <h2>Four classical arts</h2>
+      <p>Each piece is made entirely by hand, following methods passed from master to apprentice for over five centuries.</p>
+    </div>
+    <div class="disc-grid">
+      <article class="disc-card">
+        <img src="images/05-floral-illumination-border.jpg" alt="Floral illumination border">
+        <div class="body"><span class="tk">Tezhip</span><h3>Illumination</h3><p>Gold and pigment ornament — <i>rumi</i>, <i>hatai</i> and <i>bulut</i> motifs — that frames and honors the written word.</p></div>
+      </article>
+      <article class="disc-card">
+        <div class="ph">Ebru photo to add</div>
+        <div class="body"><span class="tk">Ebru</span><h3>Marbling</h3><p>Pigments floated on thickened water and lifted onto paper — every sheet a single, unrepeatable moment.</p></div>
+      </article>
+      <article class="disc-card">
+        <img src="images/06-miniature-painting-with-galata-tower-and.jpg" alt="Miniature painting with Galata Tower and blossoming branches">
+        <div class="body"><span class="tk">Minyatür</span><h3>Miniature</h3><p>Fine-brush painting in the Ottoman miniature tradition — cityscapes, flowers and storytelling in jewel-like color.</p></div>
+      </article>
+      <article class="disc-card">
+        <div class="ph">Çini photo to add</div>
+        <div class="body"><span class="tk">Çini</span><h3>Ceramics</h3><p>Plates and tiles hand-painted with İznik-inspired tulips, carnations and <i>saz</i> leaves, then glazed and fired.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="works">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Selected Works</div>
+      <h2>Portfolio</h2>
+      <p>Original illuminations and hilye compositions. Select any work to view it larger.</p>
+      <p style="font-size:14px">Calligraphy in these panels is by master calligraphers (<i>hattat</i>); Aysel Toprak is the illuminator. Calligrapher credits are noted per work.<span class="todo">credits to add</span></p>
+    </div>
+    <div class="filters" role="group" aria-label="Filter works">
+      <button data-f="all" aria-pressed="true">All</button>
+      <button data-f="tezhip" aria-pressed="false">Tezhip</button>
+      <button data-f="hilye" aria-pressed="false">Hilye</button>
+      <button data-f="calli" aria-pressed="false">Illuminated Calligraphy</button>
+    </div>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<section id="exhibitions" class="exh">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Exhibitions</div>
+      <h2>On the walls</h2>
+      <p>Moments from past exhibitions. Upcoming shows and workshops in the United States will be announced here.</p>
+    </div>
+    <div class="exh-grid">
+      <figure class="big"><img src="images/07-aysel-toprak-with-her-work-at-an-exhibit.jpg" alt="Aysel Toprak with her work at an exhibition"><figcaption>The artist with her work</figcaption></figure>
+      <figure><img src="images/08-exhibition-opening-ribbon-cutting.jpg" alt="Exhibition opening ribbon cutting"><figcaption>Exhibition opening</figcaption></figure>
+      <figure><img src="images/09-visitors-at-the-exhibition.jpg" alt="Visitors at the exhibition"><figcaption>With guests and fellow artists</figcaption></figure>
+    </div>
+    <div class="exh-list">
+      <div><b>Soon</b><span>Exhibitions &amp; workshops in the United States</span><em>To be announced</em></div>
+      <div><b>—</b><span>Past exhibitions (titles, venues, cities)<span class="todo">to complete</span></span><em>Türkiye</em></div>
+    </div>
+  </div>
+</section>
+
+<section id="atelier">
+  <div class="wrap atelier">
+    <img src="images/10-traditional-building-housing-the-atelier.jpg" alt="Traditional building housing the atelier">
+    <div class="txt">
+      <div class="eyebrow">Atelier &amp; Teaching</div>
+      <h2 style="font-size:clamp(34px,4.5vw,52px)">Learning by the master's hand</h2>
+      <p>Tezhip has always been taught in the atelier, side by side. Aysel Toprak offers introductory and advanced workshops for those who want to experience the discipline firsthand.</p>
+      <ul>
+        <li>Introduction to tezhip — drawing a classical <i>rumi</i> motif</li>
+        <li>Gold leaf application and burnishing</li>
+        <li>Ebru marbling and miniature painting sessions</li>
+        <li>Lectures on the history of Ottoman book arts</li>
+        <li>Live demonstrations for museums, universities and cultural centers</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="head center">
+      <div class="eyebrow">Contact</div>
+      <h2>Collect · Exhibit · Learn</h2>
+      <p>For acquisitions, commissions, exhibition proposals and workshop invitations.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><h3>Collectors</h3><p>Original works, commissions and fine-art giclée prints by Aysel Toprak are available through Artista Noble.</p><div class="val"><a href="https://artistanoble.etsy.com" target="_blank" rel="noopener" style="color:var(--gold)">artistanoble.etsy.com</a></div></div>
+      <div class="card"><h3>Institutions</h3><p>Galleries, museums and universities interested in exhibitions or residencies.</p><div class="val">[email address]<span class="todo">to add</span></div></div>
+      <div class="card"><h3>Workshops</h3><p>Group and private workshops, demonstrations and lectures in the U.S.</p><div class="val">Philadelphia, PA</div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap"><span>© 2026 Aysel Toprak. All artworks are protected by copyright.</span><span>Tezhip · Ebru · Minyatür · Çini</span></div>
+</footer>
+
+<div class="lb" id="lb" hidden>
+  <button class="x" aria-label="Close">✕</button>
+  <button class="p" aria-label="Previous">‹</button>
+  <figure><img id="lbimg" alt=""><figcaption id="lbcap"></figcaption></figure>
+  <button class="n" aria-label="Next">›</button>
+</div>
+
+<script>
+const works=[
+ {k:"8353d19a",t:"Oval Medallion",c:"tezhip",d:"Tezhip · navy ground"},
+ {k:"d83f2bc6",t:"Besmele",c:"calli",d:"Tezhip"},
+ {k:"1f20ba01",t:"Illuminated Besmele",c:"calli",d:"Tezhip"},
+ {k:"0baa4dcf",t:"Crimson Panel",c:"tezhip",d:"Tezhip · gold leaf"},
+ {k:"c388a88d",t:"Yâ Latîf",c:"calli",d:"Tezhip"},
+ {k:"229fe039",t:"Manuscript Page",c:"tezhip",d:"Tezhip"},
+ {k:"9a1406f9",t:"Hilye Composition",c:"hilye",d:"Hilye"},
+ {k:"12bc1a78",t:"Gold on Navy",c:"tezhip",d:"Tezhip"},
+ {k:"c0ca31d9",t:"Esmâ-ül Hüsnâ",c:"calli",d:"Tezhip"},
+ {k:"d448edd9",t:"Umber & Gold",c:"tezhip",d:"Tezhip"},
+ {k:"374154f3",t:"Hilye in Red",c:"hilye",d:"Hilye"},
+ {k:"b09077c5",t:"Ottoman Script Panel",c:"calli",d:"Tezhip"},
+ {k:"dd41993e",t:"Celî Panel",c:"calli",d:"Tezhip"},
+ {k:"09d9ce82",t:"Diagonal Composition",c:"tezhip",d:"Tezhip · blue"},
+ {k:"b7f36242",t:"Floral Border",c:"tezhip",d:"Tezhip"}
+];
+const SRC={"8353d19a": "images/work-oval-medallion.jpg", "d83f2bc6": "images/work-besmele.jpg", "1f20ba01": "images/work-illuminated-besmele.jpg", "0baa4dcf": "images/work-crimson-panel.jpg", "c388a88d": "images/work-ya-latif.jpg", "229fe039": "images/work-manuscript-page.jpg", "9a1406f9": "images/work-hilye-composition.jpg", "12bc1a78": "images/work-gold-on-navy.jpg", "c0ca31d9": "images/work-esma-ul-husna.jpg", "d448edd9": "images/work-umber-gold.jpg", "374154f3": "images/work-hilye-in-red.jpg", "b09077c5": "images/work-ottoman-script-panel.jpg", "dd41993e": "images/work-celi-panel.jpg", "09d9ce82": "images/work-diagonal-composition.jpg", "b7f36242": "images/work-floral-border.jpg"};
+const g=document.getElementById('gallery');
+let visible=[];
+function render(f){
+  g.innerHTML='';visible=works.filter(w=>f==='all'||w.c===f);
+  visible.forEach((w,i)=>{
+    const fig=document.createElement('figure');
+    fig.innerHTML=`<img loading="lazy" src="${SRC[w.k]}" alt="${w.t}"><figcaption><i>${w.t}</i><span>${w.d}</span></figcaption>`;
+    fig.onclick=()=>open(i);g.appendChild(fig);
+  });
+}
+document.querySelectorAll('.filters button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.filters button').forEach(x=>x.setAttribute('aria-pressed',x===b));
+  render(b.dataset.f);
+});
+const lb=document.getElementById('lb'),li=document.getElementById('lbimg'),lc=document.getElementById('lbcap');let cur=0;
+function open(i){cur=(i+visible.length)%visible.length;const w=visible[cur];li.src=SRC[w.k];li.alt=w.t;lc.innerHTML=`${w.t}<span>${w.d}</span>`;lb.hidden=false}
+lb.querySelector('.x').onclick=()=>lb.hidden=true;
+lb.querySelector('.p').onclick=e=>{e.stopPropagation();open(cur-1)};
+lb.querySelector('.n').onclick=e=>{e.stopPropagation();open(cur+1)};
+lb.onclick=e=>{if(e.target===lb)lb.hidden=true};
+document.addEventListener('keydown',e=>{if(lb.hidden)return;if(e.key==='Escape')lb.hidden=true;if(e.key==='ArrowLeft')open(cur-1);if(e.key==='ArrowRight')open(cur+1)});
+render('all');
+</script>
+
+</body></html>
