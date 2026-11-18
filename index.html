@@ -5,12 +5,16 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Aysel Toprak — Tezhip · Ebru · Minyatür · Çini</title>
 <link rel="canonical" href="https://ayseltoprak.com/">
+<link rel="alternate" hreflang="en" href="https://ayseltoprak.com/">
+<link rel="alternate" hreflang="tr" href="https://ayseltoprak.com/tr/">
+<link rel="alternate" hreflang="x-default" href="https://ayseltoprak.com/">
 <meta property="og:url" content="https://ayseltoprak.com/">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://ayseltoprak.com/images/og.jpg">
-<meta name="description" content="Aysel Toprak — master of Ottoman illumination (tezhip), ebru marbling, miniature painting and hand-painted çini. Original works, exhibitions and workshops in Philadelphia, PA.">
+<meta name="description" content="Aysel Toprak is a master illuminator (müzehhibe) based in Ankara, working in classical Turkish-Islamic tezhip, miniature, ebru and çini. Biography, CV, works and exhibitions.">
 <meta property="og:title" content="Aysel Toprak — Tezhip · Ebru · Minyatür · Çini">
-<meta property="og:description" content="Master of Ottoman illumination. Original works, exhibitions and workshops.">
+<meta property="og:description" content="Master illuminator (müzehhibe) in the classical Turkish-Islamic tradition. Works, exhibitions and workshops.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap">
@@ -167,37 +171,66 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 .lb .p{left:calc(18px + env(safe-area-inset-left,0px));top:50%}
 .lb .n{right:calc(18px + env(safe-area-inset-right,0px));top:50%}
 @media (max-width:600px){.lb .p,.lb .n{top:auto;bottom:calc(18px + env(safe-area-inset-bottom,0px))}}
+
+/* language */
+.lang{display:flex;gap:4px;align-items:center;font-size:12px;letter-spacing:.16em}
+.lang a{padding:4px 8px;border:1px solid transparent;color:var(--on-navy-muted);text-decoration:none}
+.lang a[aria-current="true"]{border-color:color-mix(in srgb,var(--gold-soft) 60%,transparent);color:var(--on-navy)}
+.navr{display:flex;align-items:center;gap:26px}
+@media (max-width:760px){.navr{width:100%;justify-content:space-between;gap:12px}.navr ul{width:auto;flex:1;min-width:0}}
+.langbar{background:var(--gold-soft);color:#16203a;font-size:14px}
+.langbar .wrap{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;padding-block:10px}
+.langbar a{font-weight:500;color:#16203a}
+.langbar button{font:inherit;background:none;border:0;color:#16203a;cursor:pointer;font-size:18px;line-height:1;padding:2px 6px}
+/* cv */
+.cv{background:var(--bg-alt)}
+.cv-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px 64px}
+.cv-block h3{font-size:28px;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.cv-row{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:7px 0;font-size:15.5px}
+.cv-row b{font-weight:500;color:var(--gold);font-variant-numeric:tabular-nums;white-space:nowrap}
+.cv-row span{min-width:0}
+.cv-note{margin-top:10px;color:var(--muted);font-size:14.5px;font-style:italic}
+@media (max-width:860px){.cv-grid{grid-template-columns:1fr}.cv-row{grid-template-columns:92px 1fr}}
+.exh-list span{min-width:0}
+.bio p+p{margin-top:0}
 </style>
 <style>body{margin:0}img{max-width:100%}</style>
 </head>
 <body>
+<div class="langbar" id="langbar" hidden lang="tr">
+  <div class="wrap"><span>Bu sitenin Türkçe sürümü de var.</span><a href="/tr/" data-lang="tr">Türkçe'ye geç →</a><button type="button" id="langbar-x" aria-label="Kapat">×</button></div>
+</div>
 <nav>
   <div class="wrap">
     <div class="brand">Aysel Toprak<small>Tezhip · Ebru · Minyatür · Çini</small></div>
+    <div class="navr">
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#works">Works</a></li>
       <li><a href="#exhibitions">Exhibitions</a></li>
+      <li><a href="#cv">CV</a></li>
       <li><a href="#atelier">Atelier</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <div class="lang"><a href="/" hreflang="en" lang="en" data-lang="en" aria-current="true">EN</a><a href="/tr/" hreflang="tr" lang="tr" data-lang="tr" aria-current="false">TR</a></div>
+    </div>
   </div>
 </nav>
 
 <header class="hero">
   <div class="wrap">
     <div>
-      <div class="eyebrow" style="color:var(--gold-soft)">Master of Ottoman Illumination</div>
+      <div class="eyebrow" style="color:var(--gold-soft)">Master Illuminator · Müzehhibe</div>
       <h1 style="margin-top:18px">The art of <em>gold</em> on paper</h1>
       <p class="tr">Kâğıt üzerinde altının sanatı</p>
-      <p class="lede">For more than thirty years, Aysel Toprak has practiced <i>tezhip</i> — the classical Ottoman art of illuminating manuscripts and calligraphy with burnished gold, hand-ground pigments and geometric and floral ornament. Alongside illumination she works in <i>ebru</i> marbling, miniature painting and hand-painted <i>çini</i>.</p>
+      <p class="lede">Aysel Toprak has practiced <i>tezhip</i> since 1999 — the classical Turkish-Islamic art of illuminating manuscripts and calligraphy with gold and hand-prepared pigments in geometric and floral ornament. Alongside illumination she has studied <i>çini</i>, miniature painting and <i>ebru</i>.</p>
       <div class="cta">
         <a class="btn solid" href="#works">View the Works</a>
-        <a class="btn" href="#exhibitions">Exhibitions &amp; Workshops</a>
+        <a class="btn" href="#exhibitions">Exhibitions &amp; CV</a>
       </div>
     </div>
     <figure class="hero-art" style="margin:0">
-      <div class="frame"><img src="images/01-illuminated-panel-with-deep-red-ground-a.jpg" alt="Illuminated panel with deep red ground and burnished gold ornament"></div>
+      <div class="frame"><img src="images/01-illuminated-panel-with-deep-red-ground-a.jpg" alt=""></div>
       <figcaption>Tezhip · gold leaf &amp; natural pigments</figcaption>
     </figure>
   </div>
@@ -206,21 +239,21 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 <section id="about">
   <div class="wrap about">
     <div class="about-photos">
-      <img class="tall" src="images/02-portrait-of-aysel-toprak.jpg" alt="Portrait of Aysel Toprak">
+      <img class="tall" src="images/02-portrait-of-aysel-toprak.jpg" alt="Aysel Toprak">
       <img class="sq" src="images/03-aysel-toprak.jpg" alt="Aysel Toprak">
       <img class="sq" src="images/04-aysel-toprak.jpg" alt="Aysel Toprak">
     </div>
-    <div class="about-text">
+    <div class="about-text bio">
       <div class="eyebrow">The Artist</div>
       <h2 style="font-size:clamp(36px,5vw,58px)">Aysel Toprak</h2>
-      <p class="pull" title="To be confirmed by the artist">“Tezhip is patience made visible — every leaf of gold is laid by hand, one breath at a time.”<span class="todo" style="font-family:Jost,sans-serif;font-style:normal">quote to confirm</span></p>
-      <p>Aysel Toprak is a Turkish master illuminator (<i>müzehhibe</i>) working in the classical tradition of the Ottoman court ateliers. Her practice centers on <i>tezhip</i> (illumination) — including the illumination of <i>hilye-i şerif</i> and of calligraphic panels written by master calligraphers — together with <i>ebru</i> (marbling), <i>minyatür</i> (miniature painting) and hand-painted <i>çini</i> ceramics.</p>
-      <p>Working with 22–24 karat gold leaf, shell gold and mineral pigments prepared by hand, she builds each composition through the traditional sequence of pattern drawing, pouncing, gilding, burnishing and fine outlining with brushes of a few hairs. Her work has been shown in exhibitions in Türkiye and is held in private collections.</p>
-      <p style="color:var(--muted);font-size:15px">Detailed biography, education and master lineage (<i>icazet</i>) will be added from the artist information form.<span class="todo">to complete</span></p>
+      <p>Aysel Toprak was born in Ankara in 1966 and graduated from the Dokuzuncu Akşam Sanat Okulu, a vocational evening school of arts, in 1982. She was introduced to tezhip through her husband, Mehmet Toprak. She joined the Turkish-Islamic arts courses in tezhip opened by the Ministry of Culture and studied with Memnune Birkan. The late miniature artist Ömer Faruk Atabek admired her line work and advised her to continue with tezhip, which strengthened her resolve. Despite the difficult conditions of the time, she completed her training and received her certificate of completion and achievement in 2001.</p>
+      <p>In the years that followed she took lessons in çini with Hikmet Türker (2010), miniature painting with Figen Kubatoğlu (2014–2016) and ebru with Sevimbike Polat (2024–2025), and from 2014 to 2018 continued her tezhip studies with Orhan Dağlı. She practices all of these arts with love, but says that tezhip is the art that completes her. In 2008 she received the Ministry of Culture and Tourism's juried Artist Credential as a Master of Turkish Decorative Arts and a Bearer of Intangible Cultural Heritage.</p>
+      <p>She held her first solo exhibition in 2004 at Pirinç Han in the Ankara Citadel. Since then her work has been shown in exhibitions at the Mamak Cultural Center, the State Museum of Painting and Sculpture and the Art Street of the Ulucanlar Prison Museum in Ankara, and in 2025 at the International Islamic Arts Exhibition in Zeytinburnu, Istanbul, and at the Zakat Foundation in Newark, Delaware. Her 2023 thematic exhibition, illuminating passages selected from Qâdî ʿIyâd's <i>al-Shifâ</i>, was among her most widely admired work. She is now preparing a new exhibition on the prayers of the prophets in the Qur'an. In March 2020 she created the illumination designs for the Badriya Nasser Al-Jeyan Mosque in Kuwait and guided its painted-decoration (kalem işi) team.</p>
+      <p>Aysel Toprak has taught tezhip since 2002, at the Science, Culture and Arts Foundation (İLKSAV), the Mamak Public Education Center, courses of the Ministry of Culture and Tourism, and youth centers of the Ministry of Youth and Sports and the Turkish Diyanet Foundation. Since 2014 she has given private lessons in her own studio on the Art Street of the Ulucanlar Prison Museum, and she also teaches at the Tennure Art Gallery. Many of the more than 400 students she has trained have graduated successfully from faculties of fine arts.</p>
       <div class="facts">
-        <div><b>30+</b><span>Years of practice</span></div>
-        <div><b>4</b><span>Classical arts</span></div>
-        <div><b>22–24k</b><span>Gold leaf</span></div>
+        <div><b>1999</b><span>Began tezhip training</span></div>
+        <div><b>2002</b><span>Teaching since</span></div>
+        <div><b>400+</b><span>Students trained</span></div>
       </div>
     </div>
   </div>
@@ -260,9 +293,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
       <div class="eyebrow">Selected Works</div>
       <h2>Portfolio</h2>
       <p>Original illuminations and hilye compositions. Select any work to view it larger.</p>
-      <p style="font-size:14px">Calligraphy in these panels is by master calligraphers (<i>hattat</i>); Aysel Toprak is the illuminator. Calligrapher credits are noted per work.<span class="todo">credits to add</span></p>
+      <p style="font-size:14px">Calligraphy in these panels is by master calligraphers (<i>hattat</i>); Aysel Toprak is the illuminator.</p>
     </div>
-    <div class="filters" role="group" aria-label="Filter works">
+    <div class="filters" role="group">
       <button data-f="all" aria-pressed="true">All</button>
       <button data-f="tezhip" aria-pressed="false">Tezhip</button>
       <button data-f="hilye" aria-pressed="false">Hilye</button>
@@ -277,7 +310,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
     <div class="head">
       <div class="eyebrow">Exhibitions</div>
       <h2>On the walls</h2>
-      <p>Moments from past exhibitions. Upcoming shows and workshops in the United States will be announced here.</p>
+      <p>Solo, group and thematic exhibitions in Türkiye and the United States.</p>
     </div>
     <div class="exh-grid">
       <figure class="big"><img src="images/07-aysel-toprak-with-her-work-at-an-exhibit.jpg" alt="Aysel Toprak with her work at an exhibition"><figcaption>The artist with her work</figcaption></figure>
@@ -285,8 +318,58 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
       <figure><img src="images/09-visitors-at-the-exhibition.jpg" alt="Visitors at the exhibition"><figcaption>With guests and fellow artists</figcaption></figure>
     </div>
     <div class="exh-list">
-      <div><b>Soon</b><span>Exhibitions &amp; workshops in the United States</span><em>To be announced</em></div>
-      <div><b>—</b><span>Past exhibitions (titles, venues, cities)<span class="todo">to complete</span></span><em>Türkiye</em></div>
+<div><b>Upcoming</b><span><i>Prayers of the Prophets in the Qur'an</i> — State Museum of Painting and Sculpture, Ankara</span><em>In preparation</em></div>
+<div><b>2025</b><span>Tezhip Exhibition — Zakat Foundation, Newark, Delaware</span><em>USA</em></div>
+<div><b>2025</b><span>International Islamic Arts Exhibition — Zeytinburnu, Istanbul</span><em>Group</em></div>
+<div><b>2023</b><span><i>Şifâ-i Şerif</i>: illuminated passages from Qâdî ʿIyâd's <i>al-Shifâ</i> — Mamak Cultural Center, Ankara</span><em>Thematic, group</em></div>
+<div><b>2021</b><span>Ulucanlar Prison Art Street Gallery, Altındağ Municipality, Ankara</span><em>Group</em></div>
+<div><b>2016</b><span>Ümraniye Municipality Art Days Exhibition, Istanbul</span><em>Group</em></div>
+<div><b>2014</b><span>Ulucanlar Prison Art Street Gallery, Altındağ Municipality, Ankara</span><em>Group</em></div>
+<div><b>2012</b><span>Mamak Municipality Exhibition — Mamak Cultural Center, Ankara</span><em>Group</em></div>
+<div><b>2010</b><span><i>Aysel Toprak and Her Students</i> — State Museum of Painting and Sculpture, Ankara</span><em>Group</em></div>
+<div><b>2009</b><span>Mamak Public Education Center Year-End Exhibition — Mamak Cultural Center, Ankara</span><em>Group</em></div>
+<div><b>2006</b><span>Science, Culture and Arts Foundation (İLKSAV) Exhibition — Mamak Cultural Center, Ankara</span><em>Group</em></div>
+<div><b>2004</b><span>Pirinç Han, Ankara Citadel, Ankara</span><em>Solo</em></div>
+    </div>
+  </div>
+</section>
+
+<section id="cv" class="cv">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Curriculum Vitae</div>
+      <h2>Training &amp; teaching</h2>
+    </div>
+    <div class="cv-grid">
+<div class="cv-block"><h3>Education</h3>
+<div class="cv-row"><b>1982</b><span>Dokuzuncu Akşam Sanat Okulu (vocational evening school of arts), Ankara</span></div>
+<div class="cv-row"><b>1999–2001</b><span>Tezhip, Traditional Turkish Decorative Arts Program, Ministry of Culture, Ankara (Memnune Birkan)</span></div>
+<div class="cv-row"><b>2010</b><span>Çini, Turkish tile painting (Hikmet Türker)</span></div>
+<div class="cv-row"><b>2014–2016</b><span>Miniature painting (Figen Kubatoğlu)</span></div>
+<div class="cv-row"><b>2014–2018</b><span>Advanced study in tezhip (Orhan Dağlı)</span></div>
+<div class="cv-row"><b>2024–2025</b><span>Ebru, paper marbling (Sevimbike Polat)</span></div>
+</div>
+<div class="cv-block"><h3>Teaching</h3>
+<div class="cv-row"><b>2014–</b><span>Own studio, Ulucanlar Prison Art Street, Ankara</span></div>
+<div class="cv-row"><b>2024–</b><span>Tennure Art Gallery, Hacı Bayram, Ankara</span></div>
+<div class="cv-row"><b>2025</b><span>Genç Kafe youth center, Ministry of Youth and Sports, Ankara</span></div>
+<div class="cv-row"><b>2024</b><span>Fidan Youth Center, Turkish Diyanet Foundation, Ankara</span></div>
+<div class="cv-row"><b>2018–2020</b><span>Art Workshops of the Ministry of Culture and Tourism, Ankara</span></div>
+<div class="cv-row"><b>2006–2016</b><span>Mamak Cultural Center and Mamak Public Education Center, Ankara</span></div>
+<div class="cv-row"><b>2002–2006</b><span>Science, Culture and Arts Foundation (İLKSAV), Ankara</span></div>
+<p class="cv-note">More than 400 students since 2002. Many students of faculties of fine arts have taken lessons with her and graduated with honors.</p></div>
+<div class="cv-block"><h3>Artist Credential &amp; Awards</h3>
+<div class="cv-row"><b>2008</b><span>Artist Credential as a Bearer of Intangible Cultural Heritage, Ministry of Culture and Tourism: Master of Turkish Decorative Arts</span></div>
+<div class="cv-row"><b></b><span>Certificate of Achievement, Ministry of Culture and Tourism</span></div>
+<div class="cv-row"><b></b><span>Certificate of Achievement, Mamak Municipality and Mamak Cultural Center</span></div>
+</div>
+<div class="cv-block"><h3>Commission &amp; Media</h3>
+<div class="cv-row"><b>2020</b><span>Illumination designs and kalem işi (painted decoration), Badriya Nasser Al-Jeyan Mosque, Kuwait — with calligraphers Faruk Eratlı and Sevban Esra Sarı</span></div>
+<div class="cv-row"><b>2025</b><span>Artı5TV, <i>Panorama</i></span></div>
+<div class="cv-row"><b>2023</b><span>Artı5TV, <i>Sanatın Dili</i></span></div>
+<div class="cv-row"><b>2020</b><span>TRT Diyanet TV, <i>Yeni Güne Merhaba</i> (two episodes)</span></div>
+<div class="cv-row"><b>2020</b><span>TRT Avaz, <i>Yeni Gün</i>, arts segment</span></div>
+<p class="cv-note">Has worked with illuminator Orhan Dağlı and with calligraphers including Abdulkadir Kaya, Fatih Çelik, Ali İhsan Sakal, Yusuf Şükrü Şafak, Muharrem Gökşen, Özgür Çetintaş, Erhan Bektaş and Ebru Koyuncu.</p></div>
     </div>
   </div>
 </section>
@@ -336,31 +419,16 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 </div>
 
 <script>
-const works=[
- {k:"8353d19a",t:"Oval Medallion",c:"tezhip",d:"Tezhip · navy ground"},
- {k:"d83f2bc6",t:"Besmele",c:"calli",d:"Tezhip"},
- {k:"1f20ba01",t:"Illuminated Besmele",c:"calli",d:"Tezhip"},
- {k:"0baa4dcf",t:"Crimson Panel",c:"tezhip",d:"Tezhip · gold leaf"},
- {k:"c388a88d",t:"Yâ Latîf",c:"calli",d:"Tezhip"},
- {k:"229fe039",t:"Manuscript Page",c:"tezhip",d:"Tezhip"},
- {k:"9a1406f9",t:"Hilye Composition",c:"hilye",d:"Hilye"},
- {k:"12bc1a78",t:"Gold on Navy",c:"tezhip",d:"Tezhip"},
- {k:"c0ca31d9",t:"Esmâ-ül Hüsnâ",c:"calli",d:"Tezhip"},
- {k:"d448edd9",t:"Umber & Gold",c:"tezhip",d:"Tezhip"},
- {k:"374154f3",t:"Hilye in Red",c:"hilye",d:"Hilye"},
- {k:"b09077c5",t:"Ottoman Script Panel",c:"calli",d:"Tezhip"},
- {k:"dd41993e",t:"Celî Panel",c:"calli",d:"Tezhip"},
- {k:"09d9ce82",t:"Diagonal Composition",c:"tezhip",d:"Tezhip · blue"},
- {k:"b7f36242",t:"Floral Border",c:"tezhip",d:"Tezhip"}
-];
+const works=[{"k": "8353d19a", "c": "tezhip", "t": "Oval Medallion", "d": "Tezhip · navy ground"}, {"k": "d83f2bc6", "c": "calli", "t": "Besmele", "d": "Tezhip"}, {"k": "1f20ba01", "c": "calli", "t": "Illuminated Besmele", "d": "Tezhip"}, {"k": "0baa4dcf", "c": "tezhip", "t": "Crimson Panel", "d": "Tezhip · gold leaf"}, {"k": "c388a88d", "c": "calli", "t": "Yâ Latîf", "d": "Tezhip"}, {"k": "229fe039", "c": "tezhip", "t": "Manuscript Page", "d": "Tezhip"}, {"k": "9a1406f9", "c": "hilye", "t": "Hilye Composition", "d": "Hilye"}, {"k": "12bc1a78", "c": "tezhip", "t": "Gold on Navy", "d": "Tezhip"}, {"k": "c0ca31d9", "c": "calli", "t": "Esmâ-ül Hüsnâ", "d": "Tezhip"}, {"k": "d448edd9", "c": "tezhip", "t": "Umber & Gold", "d": "Tezhip"}, {"k": "374154f3", "c": "hilye", "t": "Hilye in Red", "d": "Hilye"}, {"k": "b09077c5", "c": "calli", "t": "Ottoman Script Panel", "d": "Tezhip"}, {"k": "dd41993e", "c": "calli", "t": "Celî Panel", "d": "Tezhip"}, {"k": "09d9ce82", "c": "tezhip", "t": "Diagonal Composition", "d": "Tezhip · blue"}, {"k": "b7f36242", "c": "tezhip", "t": "Floral Border", "d": "Tezhip"}];
 const SRC={"8353d19a": "images/work-oval-medallion.jpg", "d83f2bc6": "images/work-besmele.jpg", "1f20ba01": "images/work-illuminated-besmele.jpg", "0baa4dcf": "images/work-crimson-panel.jpg", "c388a88d": "images/work-ya-latif.jpg", "229fe039": "images/work-manuscript-page.jpg", "9a1406f9": "images/work-hilye-composition.jpg", "12bc1a78": "images/work-gold-on-navy.jpg", "c0ca31d9": "images/work-esma-ul-husna.jpg", "d448edd9": "images/work-umber-gold.jpg", "374154f3": "images/work-hilye-in-red.jpg", "b09077c5": "images/work-ottoman-script-panel.jpg", "dd41993e": "images/work-celi-panel.jpg", "09d9ce82": "images/work-diagonal-composition.jpg", "b7f36242": "images/work-floral-border.jpg"};
 const g=document.getElementById('gallery');
 let visible=[];
+function esc(s){return s.replace(/[&<>"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]))}
 function render(f){
   g.innerHTML='';visible=works.filter(w=>f==='all'||w.c===f);
   visible.forEach((w,i)=>{
     const fig=document.createElement('figure');
-    fig.innerHTML=`<img loading="lazy" src="${SRC[w.k]}" alt="${w.t}"><figcaption><i>${w.t}</i><span>${w.d}</span></figcaption>`;
+    fig.innerHTML=`<img loading="lazy" src="${SRC[w.k]}" alt="${esc(w.t)}"><figcaption><i>${esc(w.t)}</i><span>${esc(w.d)}</span></figcaption>`;
     fig.onclick=()=>open(i);g.appendChild(fig);
   });
 }
@@ -369,13 +437,26 @@ document.querySelectorAll('.filters button').forEach(b=>b.onclick=()=>{
   render(b.dataset.f);
 });
 const lb=document.getElementById('lb'),li=document.getElementById('lbimg'),lc=document.getElementById('lbcap');let cur=0;
-function open(i){cur=(i+visible.length)%visible.length;const w=visible[cur];li.src=SRC[w.k];li.alt=w.t;lc.innerHTML=`${w.t}<span>${w.d}</span>`;lb.hidden=false}
+function open(i){cur=(i+visible.length)%visible.length;const w=visible[cur];li.src=SRC[w.k];li.alt=w.t;lc.innerHTML=`${esc(w.t)}<span>${esc(w.d)}</span>`;lb.hidden=false}
 lb.querySelector('.x').onclick=()=>lb.hidden=true;
 lb.querySelector('.p').onclick=e=>{e.stopPropagation();open(cur-1)};
 lb.querySelector('.n').onclick=e=>{e.stopPropagation();open(cur+1)};
 lb.onclick=e=>{if(e.target===lb)lb.hidden=true};
 document.addEventListener('keydown',e=>{if(lb.hidden)return;if(e.key==='Escape')lb.hidden=true;if(e.key==='ArrowLeft')open(cur-1);if(e.key==='ArrowRight')open(cur+1)});
 render('all');
+
+(function(){
+  var KEY='at-lang';
+  function get(){try{return localStorage.getItem(KEY)}catch(e){return null}}
+  function set(v){try{localStorage.setItem(KEY,v)}catch(e){}}
+  document.querySelectorAll('[data-lang]').forEach(function(a){a.addEventListener('click',function(){set(a.dataset.lang)})});
+  var bar=document.getElementById('langbar');
+  document.getElementById('langbar-x').addEventListener('click',function(){bar.hidden=true;set('en')});
+  if(get()||/bot|crawl|spider|slurp/i.test(navigator.userAgent))return;
+  var langs=navigator.languages||[navigator.language||''];
+  if(langs.some(function(l){return /^tr\b/i.test(l)})){bar.hidden=false;return}
+  fetch('/cdn-cgi/trace').then(function(r){return r.ok?r.text():''}).then(function(t){if(/(^|\n)loc=TR(\n|$)/.test(t))bar.hidden=false}).catch(function(){});
+})();
 </script>
 
 </body></html>

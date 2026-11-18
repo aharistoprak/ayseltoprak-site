@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Aysel Toprak — Tezhip · Ebru · Minyatür · Çini</title>
+<link rel="canonical" href="https://ayseltoprak.com/tr/">
+<link rel="alternate" hreflang="en" href="https://ayseltoprak.com/">
+<link rel="alternate" hreflang="tr" href="https://ayseltoprak.com/tr/">
+<link rel="alternate" hreflang="x-default" href="https://ayseltoprak.com/">
+<meta property="og:url" content="https://ayseltoprak.com/tr/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:image" content="https://ayseltoprak.com/images/og.jpg">
+<meta name="description" content="Ankara'da yaşayan müzehhibe Aysel Toprak; klasik Türk-İslam tezhibi, minyatür, ebru ve çini. Biyografi, özgeçmiş, eserler ve sergiler.">
+<meta property="og:title" content="Aysel Toprak — Tezhip · Ebru · Minyatür · Çini">
+<meta property="og:description" content="Klasik Türk-İslam sanatları geleneğinde müzehhibe. Eserler, sergiler ve atölye çalışmaları.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap">
+<style>
+:root{
+  --bg:#f6f1e7; --bg-alt:#efe7d6; --surface:#fbf8f1;
+  --fg:#1d2233; --muted:#5d5a52; --line:#d9ccb0;
+  --gold:#9a7a2e; --gold-soft:#c9a84c;
+  --navy:#16203a; --on-navy:#f3ead6; --on-navy-muted:#c4b893;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#10162a; --bg-alt:#0b1020; --surface:#161e36;
+  --fg:#efe6d2; --muted:#a9a18c; --line:#2e3756;
+  --gold:#d4b25c; --gold-soft:#c9a84c;
+  --navy:#0a0f1e; --on-navy:#f3ead6; --on-navy-muted:#b9ad88; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#10162a; --bg-alt:#0b1020; --surface:#161e36;
+  --fg:#efe6d2; --muted:#a9a18c; --line:#2e3756;
+  --gold:#d4b25c; --gold-soft:#c9a84c;
+  --navy:#0a0f1e; --on-navy:#f3ead6; --on-navy-muted:#b9ad88; color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:"Jost",system-ui,sans-serif;font-weight:300;font-size:17px;line-height:1.7}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.1;text-wrap:balance;margin:0}
+p{margin:0}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+.eyebrow{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:500}
+.rule{display:flex;align-items:center;gap:14px;color:var(--gold-soft)}
+.rule::before,.rule::after{content:"";height:1px;flex:1;background:currentColor;opacity:.5}
+.rule svg{width:18px;height:18px}
+
+/* nav */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--navy)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--navy) 94%,transparent);backdrop-filter:blur(6px);color:var(--on-navy)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.brand{font-family:"Cormorant Garamond",serif;font-size:22px;letter-spacing:.06em}
+.brand small{display:block;font-family:"Jost",sans-serif;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--on-navy-muted)}
+nav ul{list-style:none;display:flex;gap:26px;margin:0;padding:0;font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+nav a{text-decoration:none;color:var(--on-navy-muted);transition:color .2s}
+nav a:hover{color:var(--gold-soft)}
+@media (max-width:760px){nav .wrap{flex-wrap:wrap;row-gap:10px}nav ul{width:100%;overflow-x:auto;gap:20px;font-size:11px;padding-bottom:2px;scrollbar-width:none}nav ul::-webkit-scrollbar{display:none}}
+
+/* hero */
+.hero{background:var(--navy);color:var(--on-navy);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding-block:72px 88px}
+.hero h1{font-size:clamp(48px,7vw,92px);font-weight:400;letter-spacing:.01em}
+.hero h1 em{font-style:italic;color:var(--gold-soft)}
+.hero .lede{margin-top:24px;max-width:46ch;color:var(--on-navy-muted);font-size:18px}
+.hero .tr{margin-top:10px;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:20px;color:var(--on-navy-muted)}
+.hero .cta{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 26px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;text-decoration:none;border:1px solid var(--gold-soft);color:var(--on-navy);transition:background .2s,color .2s}
+.btn.solid{background:var(--gold-soft);color:#16203a}
+.btn:hover{background:var(--gold-soft);color:#16203a}
+.hero-art{position:relative;justify-self:center;max-width:460px;width:100%}
+.hero-art .frame{padding:14px;border:1px solid color-mix(in srgb,var(--gold-soft) 60%,transparent);background:color-mix(in srgb,var(--gold-soft) 6%,transparent)}
+.hero-art img{display:block;width:100%;height:auto}
+.hero-art figcaption{margin-top:12px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--on-navy-muted);text-align:center}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:40px;padding-block:48px 64px}}
+
+section{padding-block:96px}
+.head{display:grid;gap:14px;margin-bottom:48px;max-width:640px}
+.head h2{font-size:clamp(36px,5vw,58px)}
+.head p{color:var(--muted)}
+.center{margin-inline:auto;text-align:center}
+
+/* about */
+.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:start}
+.about-photos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.about-photos img{width:100%;height:100%;object-fit:cover;display:block}
+.about-photos .tall{grid-row:span 2;aspect-ratio:3/4.4}
+.about-photos .sq{aspect-ratio:1/1.05}
+.about-text{display:grid;gap:22px;min-width:0}
+.about-text p{max-width:62ch}
+.pull{font-family:"Cormorant Garamond",serif;font-size:28px;font-style:italic;line-height:1.35;color:var(--gold);border-left:2px solid var(--gold-soft);padding-left:22px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:10px}
+.facts div{background:var(--bg);padding:20px 18px}
+.facts b{display:block;font-family:"Cormorant Garamond",serif;font-weight:500;font-size:38px;line-height:1;color:var(--fg)}
+.facts span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:860px){.about{grid-template-columns:1fr;gap:40px}}
+@media (max-width:480px){.facts{grid-template-columns:1fr}}
+
+/* disciplines */
+.disc{background:var(--bg-alt)}
+.disc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.ph{aspect-ratio:4/3;display:grid;place-items:center;background:repeating-linear-gradient(45deg,var(--bg-alt) 0 12px,var(--surface) 12px 24px);color:var(--muted);font-size:11px;letter-spacing:.18em;text-transform:uppercase;border-bottom:1px solid var(--line)}
+.disc-card{background:var(--surface);border:1px solid var(--line);display:flex;flex-direction:column}
+.disc-card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.disc-card .body{padding:26px;display:grid;gap:8px}
+.disc-card h3{font-size:30px}
+.disc-card .tk{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gold);font-size:18px}
+.disc-card p{color:var(--muted);font-size:15.5px}
+@media (max-width:1040px){.disc-grid{grid-template-columns:1fr 1fr}}@media (max-width:560px){.disc-grid{grid-template-columns:1fr}}
+
+/* gallery */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:34px}
+.filters button{font:inherit;font-size:12px;letter-spacing:.18em;text-transform:uppercase;padding:9px 18px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.gallery{columns:3 300px;column-gap:22px}
+.gallery figure{break-inside:avoid;margin:0 0 22px;cursor:zoom-in}
+.gallery img{width:100%;display:block;border:1px solid var(--line);transition:transform .4s ease,box-shadow .4s ease}
+.gallery figure:hover img{transform:translateY(-3px);box-shadow:0 14px 30px -18px rgba(0,0,0,.5)}
+.gallery figcaption{padding-top:10px;display:flex;justify-content:space-between;gap:10px;font-size:14px}
+.gallery figcaption i{font-family:"Cormorant Garamond",serif;font-size:18px;font-style:normal}
+.gallery figcaption span{color:var(--muted);font-size:11px;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;padding-top:4px}
+
+/* exhibitions */
+.exh{background:var(--navy);color:var(--on-navy)}
+.exh .head p{color:var(--on-navy-muted)}
+.exh .eyebrow{color:var(--gold-soft)}
+.exh-grid{display:grid;grid-template-columns:1.4fr 1fr;grid-template-rows:auto auto;gap:16px}
+.exh-grid figure{margin:0;position:relative;overflow:hidden}
+.exh-grid img{width:100%;height:100%;object-fit:cover;display:block}
+.exh-grid .big{grid-row:span 2;aspect-ratio:4/4.3}
+.exh-grid figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 18px 14px;background:linear-gradient(transparent,rgba(8,12,24,.85));font-size:13px;letter-spacing:.06em;color:#f3ead6}
+.exh-list{margin-top:56px;display:grid;gap:0;border-top:1px solid color-mix(in srgb,var(--gold-soft) 35%,transparent)}
+.exh-list div{display:grid;grid-template-columns:120px 1fr auto;gap:20px;padding:20px 0;border-bottom:1px solid color-mix(in srgb,var(--gold-soft) 35%,transparent);align-items:baseline}
+.exh-list b{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:24px;color:var(--gold-soft)}
+.exh-list em{font-style:normal;color:var(--on-navy-muted);font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+.todo{display:inline-block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;border:1px dashed currentColor;padding:2px 8px;opacity:.7;margin-left:8px;vertical-align:middle}
+@media (max-width:760px){.exh-grid{grid-template-columns:1fr}.exh-grid .big{grid-row:auto}.exh-list div{grid-template-columns:1fr;gap:4px}}
+
+/* atelier */
+.atelier{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.atelier img{width:100%;display:block;border:1px solid var(--line)}
+.atelier .txt{display:grid;gap:18px;min-width:0}
+.atelier ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.atelier li{display:flex;gap:14px;align-items:baseline}
+.atelier li::before{content:"◆";color:var(--gold-soft);font-size:10px}
+@media (max-width:860px){.atelier{grid-template-columns:1fr;gap:36px}}
+
+/* contact */
+.contact{background:var(--bg-alt);text-align:center}
+.contact .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px;text-align:left}
+.contact .card{background:var(--surface);border:1px solid var(--line);padding:28px;display:grid;gap:10px;align-content:start}
+.contact .card h3{font-size:26px}
+.contact .card p{color:var(--muted);font-size:15px}
+.contact .card .val{font-size:15px;color:var(--fg);user-select:all;word-break:break-word}
+@media (max-width:860px){.contact .grid{grid-template-columns:1fr}}
+
+footer{background:var(--navy);color:var(--on-navy-muted);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:30px}
+
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(6,9,18,.94);z-index:50;display:flex;align-items:center;justify-content:center;padding:max(24px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(24px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lb figure{margin:0;max-width:min(1000px,100%);display:grid;gap:14px;justify-items:center}
+.lb img{max-height:80vh;width:auto;max-width:100%;border:1px solid #3a3320}
+.lb figcaption{color:#e6dcc4;text-align:center;font-family:"Cormorant Garamond",serif;font-size:22px}
+.lb figcaption span{display:block;font-family:"Jost",sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#a99d7c;margin-top:4px}
+.lb button{position:absolute;background:none;border:1px solid #6c5c32;color:#e6dcc4;width:44px;height:44px;font-size:20px;cursor:pointer}
+.lb .x{top:calc(18px + env(safe-area-inset-top,0px));right:calc(18px + env(safe-area-inset-right,0px))}
+.lb .p{left:calc(18px + env(safe-area-inset-left,0px));top:50%}
+.lb .n{right:calc(18px + env(safe-area-inset-right,0px));top:50%}
+@media (max-width:600px){.lb .p,.lb .n{top:auto;bottom:calc(18px + env(safe-area-inset-bottom,0px))}}
+
+/* language */
+.lang{display:flex;gap:4px;align-items:center;font-size:12px;letter-spacing:.16em}
+.lang a{padding:4px 8px;border:1px solid transparent;color:var(--on-navy-muted);text-decoration:none}
+.lang a[aria-current="true"]{border-color:color-mix(in srgb,var(--gold-soft) 60%,transparent);color:var(--on-navy)}
+.navr{display:flex;align-items:center;gap:26px}
+@media (max-width:760px){.navr{width:100%;justify-content:space-between;gap:12px}.navr ul{width:auto;flex:1;min-width:0}}
+.langbar{background:var(--gold-soft);color:#16203a;font-size:14px}
+.langbar .wrap{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;padding-block:10px}
+.langbar a{font-weight:500;color:#16203a}
+.langbar button{font:inherit;background:none;border:0;color:#16203a;cursor:pointer;font-size:18px;line-height:1;padding:2px 6px}
+/* cv */
+.cv{background:var(--bg-alt)}
+.cv-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px 64px}
+.cv-block h3{font-size:28px;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.cv-row{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:7px 0;font-size:15.5px}
+.cv-row b{font-weight:500;color:var(--gold);font-variant-numeric:tabular-nums;white-space:nowrap}
+.cv-row span{min-width:0}
+.cv-note{margin-top:10px;color:var(--muted);font-size:14.5px;font-style:italic}
+@media (max-width:860px){.cv-grid{grid-template-columns:1fr}.cv-row{grid-template-columns:92px 1fr}}
+.exh-list span{min-width:0}
+.bio p+p{margin-top:0}
+</style>
+<style>body{margin:0}img{max-width:100%}</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <div class="brand">Aysel Toprak<small>Tezhip · Ebru · Minyatür · Çini</small></div>
+    <div class="navr">
+    <ul>
+      <li><a href="#about">Hakkında</a></li>
+      <li><a href="#works">Eserler</a></li>
+      <li><a href="#exhibitions">Sergiler</a></li>
+      <li><a href="#cv">Özgeçmiş</a></li>
+      <li><a href="#atelier">Atölye</a></li>
+      <li><a href="#contact">İletişim</a></li>
+    </ul>
+    <div class="lang"><a href="/" hreflang="en" lang="en" data-lang="en" aria-current="false">EN</a><a href="/tr/" hreflang="tr" lang="tr" data-lang="tr" aria-current="true">TR</a></div>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow" style="color:var(--gold-soft)">Müzehhibe</div>
+      <h1 style="margin-top:18px">Kâğıt üzerinde <em>altının</em> sanatı</h1>
+      <p class="tr">The art of gold on paper</p>
+      <p class="lede">Aysel Toprak 1999'dan bu yana <i>tezhip</i> sanatıyla uğraşıyor: el yazmalarını ve hat levhalarını altın ve elde hazırlanan boyalarla, geometrik ve bitkisel motiflerle süsleyen klasik Türk-İslam sanatı. Tezhibin yanı sıra çini, minyatür ve ebru da çalışmıştır.</p>
+      <div class="cta">
+        <a class="btn solid" href="#works">Eserleri İnceleyin</a>
+        <a class="btn" href="#exhibitions">Sergiler ve Özgeçmiş</a>
+      </div>
+    </div>
+    <figure class="hero-art" style="margin:0">
+      <div class="frame"><img src="../images/01-illuminated-panel-with-deep-red-ground-a.jpg" alt=""></div>
+      <figcaption>Tezhip · altın varak ve doğal boyalar</figcaption>
+    </figure>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap about">
+    <div class="about-photos">
+      <img class="tall" src="../images/02-portrait-of-aysel-toprak.jpg" alt="Aysel Toprak">
+      <img class="sq" src="../images/03-aysel-toprak.jpg" alt="Aysel Toprak">
+      <img class="sq" src="../images/04-aysel-toprak.jpg" alt="Aysel Toprak">
+    </div>
+    <div class="about-text bio">
+      <div class="eyebrow">Sanatçı</div>
+      <h2 style="font-size:clamp(36px,5vw,58px)">Aysel Toprak</h2>
+      <p>Aysel Toprak 1966'da Ankara'da doğdu. 1982'de Dokuzuncu Akşam Sanat Okulundan mezun oldu. Tezhiple tanışıklığı eşi Mehmet Toprak vesilesi ile oldu. Kültür Bakanlığı'nda açılan Türk-İslam sanatları tezhip kurslarına katıldı ve Memnune Birkan'dan dersler aldı. Minyatür Sanatçısı merhum Ömer Faruk Atabek'in, kalemini beğenip tezhibe devam etmesini tavsiye etmesi, onun bu yoldaki motivasyonunu artırdı. Dönemin zor şartlarına rağmen tezhip eğitimini tamamladı ve 2001'de kurs bitirme başarı belgesini aldı.</p>
+      <p>Sonraki yıllarda Hikmet Türker'den çini (2010), Figen Kubatoğlu'ndan minyatür (2014–2016), Sevimbike Polat'tan da ebru (2024–2025) dersleri aldı; 2014–2018 yılları arasında Orhan Dağlı ile tezhip meşklerine devam etti. Bu sanatların hepsini severek icra eden Aysel Toprak; kendisini tamamlayan sanatın tezhip olduğunu söylemektedir. 2008'de Kültür ve Turizm Bakanlığı'nın jüri değerlendirmesiyle verdiği Türk Süsleme Sanatları Sanatkârı, somut olmayan kültürel miras taşıyıcısı sanatçı tanıtım kartını aldı.</p>
+      <p>İlk kişisel sergisini 2004'te Ankara Kalesi, Pirinç Han'da açtı. Eserleri o günden beri Mamak Kültür Merkezi, Resim ve Heykel Müzesi ve Ulucanlar Cezaevi Müzesi Sanat Sokağı'nda düzenlenen çeşitli sergilerde sanatseverlerle buluştu. Ayrıca; 2025'te İstanbul Zeytinburnu Uluslararası İslam Sanatları Sergisi ve ABD'de Newark, Delaware'deki Zakat Foundation'da sergilendi. Kadı İyâz'ın Şifâ-i Şerif kitabından seçilen metinlerin tezhiplendiği 2023 tarihli konulu sergi, en çok ilgi gören çalışmalarından biri oldu. Sanatçı Aysel Toprak şu anda Kur'ân-ı Kerim'deki peygamber duaları üzerine yeni bir sergi hazırlığı içerisindedir. Mart 2020'de Kuveyt'teki Badriya Nasser Al-Jeyan Camii tezyinatı için desenler çizdi ve kalem işi ekibini yönlendirdi.</p>
+      <p>2002'den bu yana Tezhip hocalığı yapan Aysel Toprak, İlim Kültür ve Sanat Vakfı (ILKSAV), Mamak Halk Eğitim Merkezi, Kültür ve Turizm Bakanlığı kursları, Gençlik ve Spor Bakanlığı ve Türkiye Diyanet Vakfı'na bağlı gençlik merkezlerinde dersler verdi. 2014'ten beri Ulucanlar Cezaevi Müzesi Sanat Sokağı'ndaki kendi sanat atölyesinde özel dersler veren Aysel Toprak; ayrıca Tennure Sanat Galerisi'nde de öğrenci yetiştirmektedir. Bu zamana kadar yetiştirdiği 400'ü aşkın öğrencisinin pek çoğu güzel sanatlar fakültelerinden başarı ile mezun olmuştur.</p>
+      <div class="facts">
+        <div><b>1999</b><span>Tezhip eğitimine başladı</span></div>
+        <div><b>2002</b><span>Yılından beri hocalık</span></div>
+        <div><b>400+</b><span>Yetiştirdiği öğrenci</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="disc">
+  <div class="wrap">
+    <div class="head center">
+      <div class="rule"><svg viewBox="0 0 20 20"><path d="M10 1l3 6 6 3-6 3-3 6-3-6-6-3 6-3z" fill="currentColor"/></svg></div>
+      <h2>Dört klasik sanat</h2>
+      <p>Her eser, beş yüzyılı aşkın süredir ustadan çırağa aktarılan yöntemlerle tamamen elde yapılır.</p>
+    </div>
+    <div class="disc-grid">
+      <article class="disc-card">
+        <img src="../images/05-floral-illumination-border.jpg" alt="Çiçekli tezhip bordürü">
+        <div class="body"><span class="tk">Tezhip</span><h3>Tezhip</h3><p>Yazıyı çerçeveleyen ve yücelten altın ve boya süslemeler: <i>rumi</i>, <i>hatai</i> ve <i>bulut</i> motifleri.</p></div>
+      </article>
+      <article class="disc-card">
+        <div class="ph">Ebru fotoğrafı eklenecek</div>
+        <div class="body"><span class="tk">Ebru</span><h3>Ebru</h3><p>Kitreli su üzerine serpilen boyaların kâğıda alınması; her kâğıt tekrarı olmayan tek bir an.</p></div>
+      </article>
+      <article class="disc-card">
+        <img src="../images/06-miniature-painting-with-galata-tower-and.jpg" alt="Galata Kulesi ve çiçekli dallarla minyatür">
+        <div class="body"><span class="tk">Minyatür</span><h3>Minyatür</h3><p>Osmanlı minyatür geleneğinde ince fırça resmi: şehir manzaraları, çiçekler ve hikâyeler, mücevher gibi renklerle.</p></div>
+      </article>
+      <article class="disc-card">
+        <div class="ph">Çini fotoğrafı eklenecek</div>
+        <div class="body"><span class="tk">Çini</span><h3>Çini</h3><p>İznik geleneğinden ilham alan lale, karanfil ve <i>saz</i> yapraklarıyla elde boyanıp sırlanarak fırınlanan tabak ve karolar.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="works">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Seçilmiş Eserler</div>
+      <h2>Eserler</h2>
+      <p>Özgün tezhip ve hilye çalışmaları. Büyütmek için bir esere dokunun.</p>
+      <p style="font-size:14px">Bu levhalardaki hat, usta hattatlara aittir; tezhip Aysel Toprak'a aittir.</p>
+    </div>
+    <div class="filters" role="group">
+      <button data-f="all" aria-pressed="true">Tümü</button>
+      <button data-f="tezhip" aria-pressed="false">Tezhip</button>
+      <button data-f="hilye" aria-pressed="false">Hilye</button>
+      <button data-f="calli" aria-pressed="false">Tezhipli Hat</button>
+    </div>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<section id="exhibitions" class="exh">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Sergiler</div>
+      <h2>Sergiler</h2>
+      <p>Türkiye'de ve ABD'de kişisel, karma ve konulu sergiler.</p>
+    </div>
+    <div class="exh-grid">
+      <figure class="big"><img src="../images/07-aysel-toprak-with-her-work-at-an-exhibit.jpg" alt="Aysel Toprak bir sergide eseriyle"><figcaption>Sanatçı eseriyle</figcaption></figure>
+      <figure><img src="../images/08-exhibition-opening-ribbon-cutting.jpg" alt="Sergi açılışında kurdele kesimi"><figcaption>Sergi açılışı</figcaption></figure>
+      <figure><img src="../images/09-visitors-at-the-exhibition.jpg" alt="Sergideki ziyaretçiler"><figcaption>Misafirler ve sanatçı dostlarıyla</figcaption></figure>
+    </div>
+    <div class="exh-list">
+<div><b>Yakında</b><span>Kur'ân-ı Kerim'de Peygamber Duaları Sergisi — Resim ve Heykel Müzesi, Ankara</span><em>Hazırlık aşamasında</em></div>
+<div><b>2025</b><span>Tezhip Sergisi — Zakat Foundation, Newark, Delaware</span><em>ABD</em></div>
+<div><b>2025</b><span>Uluslararası İslam Sanatları Sergisi — Zeytinburnu, İstanbul</span><em>Karma</em></div>
+<div><b>2023</b><span>Şifâ-i Şerif Sergisi: Kadı İyâz'ın Şifâ-i Şerif'inden seçilen metinlerin tezhibi — Mamak Kültür Merkezi, Ankara</span><em>Konulu, karma</em></div>
+<div><b>2021</b><span>Altındağ Belediyesi Ulucanlar Cezaevi Sanat Sokağı Galerisi, Ankara</span><em>Karma</em></div>
+<div><b>2016</b><span>Ümraniye Belediyesi Sanat Günleri Sergisi, İstanbul</span><em>Karma</em></div>
+<div><b>2014</b><span>Altındağ Belediyesi Ulucanlar Cezaevi Sanat Sokağı Galerisi, Ankara</span><em>Karma</em></div>
+<div><b>2012</b><span>Mamak Belediyesi Sergisi — Mamak Kültür Merkezi, Ankara</span><em>Karma</em></div>
+<div><b>2010</b><span>Aysel Toprak ve öğrencileri karma sergisi — Resim ve Heykel Müzesi, Ankara</span><em>Karma</em></div>
+<div><b>2009</b><span>Mamak Halk Eğitim Merkezi Yılsonu Sergisi — Mamak Kültür Merkezi, Ankara</span><em>Karma</em></div>
+<div><b>2006</b><span>İlim Kültür ve Sanat Vakfı (ILKSAV) Sergisi — Mamak Kültür Merkezi, Ankara</span><em>Karma</em></div>
+<div><b>2004</b><span>Pirinç Han, Ankara Kalesi, Ankara</span><em>Kişisel</em></div>
+    </div>
+  </div>
+</section>
+
+<section id="cv" class="cv">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Özgeçmiş</div>
+      <h2>Eğitim ve hocalık</h2>
+    </div>
+    <div class="cv-grid">
+<div class="cv-block"><h3>Eğitim</h3>
+<div class="cv-row"><b>1982</b><span>Dokuzuncu Akşam Sanat Okulu, Ankara</span></div>
+<div class="cv-row"><b>1999–2001</b><span>T.C. Kültür Bakanlığı Geleneksel Türk Süsleme Sanatları Tezhip Eğitimi, Ankara (Memnune Birkan)</span></div>
+<div class="cv-row"><b>2010</b><span>Çini eğitimi (Hikmet Türker)</span></div>
+<div class="cv-row"><b>2014–2016</b><span>Minyatür eğitimi (Figen Kubatoğlu)</span></div>
+<div class="cv-row"><b>2014–2018</b><span>Tezhip çalışmaları (Orhan Dağlı)</span></div>
+<div class="cv-row"><b>2024–2025</b><span>Ebru eğitimi (Sevimbike Polat)</span></div>
+</div>
+<div class="cv-block"><h3>Öğretmenlik</h3>
+<div class="cv-row"><b>2014–</b><span>Kendi atölyesi, Ulucanlar Cezaevi Sanat Sokağı, Ankara</span></div>
+<div class="cv-row"><b>2024–</b><span>Tennure Sanat Galerisi, Hacı Bayram, Ankara</span></div>
+<div class="cv-row"><b>2025</b><span>Gençlik ve Spor Bakanlığı Genç Kafe, Hamamarkası, Ankara</span></div>
+<div class="cv-row"><b>2024</b><span>Fidan Gençlik Merkezi, Türkiye Diyanet Vakfı, Hamamarkası, Ankara</span></div>
+<div class="cv-row"><b>2018–2020</b><span>T.C. Kültür ve Turizm Bakanlığı Sanat Atölyeleri, Ankara</span></div>
+<div class="cv-row"><b>2006–2016</b><span>Mamak Kültür Merkezi, Mamak Halk Eğitim Merkezi, Ankara</span></div>
+<div class="cv-row"><b>2002–2006</b><span>İlim Kültür ve Sanat Vakfı (ILKSAV), Ankara</span></div>
+<p class="cv-note">2002'den beri 400'ü aşkın öğrenci. Güzel sanatlar fakültelerinden birçok öğrenci ders almış ve okullarını dereceyle bitirmişlerdir.</p></div>
+<div class="cv-block"><h3>Sanatçı Tanıtım Kartı ve Ödüller</h3>
+<div class="cv-row"><b>2008</b><span>T.C. Kültür ve Turizm Bakanlığı Somut Olmayan Kültürel Miras Taşıyıcısı Sanatçı Tanıtım Kartı: Türk Süsleme Sanatları Sanatkârı</span></div>
+<div class="cv-row"><b></b><span>T.C. Kültür ve Turizm Bakanlığı Başarı Belgesi</span></div>
+<div class="cv-row"><b></b><span>Mamak Belediyesi, Mamak Kültür Merkezi Başarı Belgesi</span></div>
+</div>
+<div class="cv-block"><h3>Projeler ve Televizyon</h3>
+<div class="cv-row"><b>2020</b><span>Kuveyt Badriya Nasser Al-Jeyan Camii tezyinat projesi: tezyinat çizimleri ve kalem işi asistanlığı (Hattatlar Faruk Eratlı ve Sevban Esra Sarı)</span></div>
+<div class="cv-row"><b>2025</b><span>Artı5TV, Panorama</span></div>
+<div class="cv-row"><b>2023</b><span>Artı5TV, Sanatın Dili</span></div>
+<div class="cv-row"><b>2020</b><span>TRT Diyanet TV, Yeni Güne Merhaba (2 bölüm)</span></div>
+<div class="cv-row"><b>2020</b><span>TRT Avaz, Yeni Gün, Sanat bölümü</span></div>
+<p class="cv-note">Birlikte çalıştığı sanatçılar: Orhan Dağlı (Müzehhip); hattatlar Abdulkadir Kaya, Fatih Çelik, Ali İhsan Sakal, Yusuf Şükrü Şafak, Muharrem Gökşen, Özgür Çetintaş, Erhan Bektaş, Ebru Koyuncu, vd.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="atelier">
+  <div class="wrap atelier">
+    <img src="../images/10-traditional-building-housing-the-atelier.jpg" alt="Atölyenin bulunduğu geleneksel yapı">
+    <div class="txt">
+      <div class="eyebrow">Atölye ve Dersler</div>
+      <h2 style="font-size:clamp(34px,4.5vw,52px)">Ustanın elinden öğrenmek</h2>
+      <p>Tezhip her zaman atölyede, yan yana oturularak öğretilmiştir. Aysel Toprak, bu sanatı yakından tanımak isteyenler için başlangıç ve ileri seviye atölye çalışmaları düzenler.</p>
+      <ul>
+        <li>Tezhibe giriş: klasik bir <i>rumi</i> motifi çizmek</li>
+        <li>Altın varak uygulama ve mühreleme</li>
+        <li>Ebru ve minyatür çalışmaları</li>
+        <li>Osmanlı kitap sanatları tarihi üzerine sunumlar</li>
+        <li>Müzeler, üniversiteler ve kültür merkezleri için canlı gösteriler</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="head center">
+      <div class="eyebrow">İletişim</div>
+      <h2>Koleksiyon · Sergi · Ders</h2>
+      <p>Eser edinme, sipariş, sergi teklifleri ve atölye davetleri için.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><h3>Koleksiyonerler</h3><p>Aysel Toprak'ın özgün eserleri, siparişleri ve giclée baskıları Artista Noble aracılığıyla edinilebilir.</p><div class="val"><a href="https://artistanoble.etsy.com" target="_blank" rel="noopener" style="color:var(--gold)">artistanoble.etsy.com</a></div></div>
+      <div class="card"><h3>Kurumlar</h3><p>Sergi veya misafir sanatçı programıyla ilgilenen galeriler, müzeler ve üniversiteler.</p><div class="val"><a href="mailto:info@ayseltoprak.com" style="color:var(--gold)">info@ayseltoprak.com</a></div></div>
+      <div class="card"><h3>Atölyeler</h3><p>ABD'de grup ve özel atölyeler, gösteriler ve sunumlar.</p><div class="val">Philadelphia, PA</div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap"><span>© 2026 Aysel Toprak. Tüm eserler telif hakkı ile korunmaktadır.</span><span>Tezhip · Ebru · Minyatür · Çini</span></div>
+</footer>
+
+<div class="lb" id="lb" hidden>
+  <button class="x" aria-label="Kapat">✕</button>
+  <button class="p" aria-label="Önceki">‹</button>
+  <figure><img id="lbimg" alt=""><figcaption id="lbcap"></figcaption></figure>
+  <button class="n" aria-label="Sonraki">›</button>
+</div>
+
+<script>
+const works=[{"k": "8353d19a", "c": "tezhip", "t": "Oval Madalyon", "d": "Tezhip · lacivert zemin"}, {"k": "d83f2bc6", "c": "calli", "t": "Besmele", "d": "Tezhip"}, {"k": "1f20ba01", "c": "calli", "t": "Tezhipli Besmele", "d": "Tezhip"}, {"k": "0baa4dcf", "c": "tezhip", "t": "Kırmızı Zeminli Pano", "d": "Tezhip · altın varak"}, {"k": "c388a88d", "c": "calli", "t": "Yâ Latîf", "d": "Tezhip"}, {"k": "229fe039", "c": "tezhip", "t": "El Yazması Sayfa", "d": "Tezhip"}, {"k": "9a1406f9", "c": "hilye", "t": "Hilye Kompozisyonu", "d": "Hilye"}, {"k": "12bc1a78", "c": "tezhip", "t": "Lacivert Üzerine Altın", "d": "Tezhip"}, {"k": "c0ca31d9", "c": "calli", "t": "Esmâ-ül Hüsnâ", "d": "Tezhip"}, {"k": "d448edd9", "c": "tezhip", "t": "Kahve ve Altın", "d": "Tezhip"}, {"k": "374154f3", "c": "hilye", "t": "Kırmızı Hilye", "d": "Hilye"}, {"k": "b09077c5", "c": "calli", "t": "Osmanlıca Yazı Panosu", "d": "Tezhip"}, {"k": "dd41993e", "c": "calli", "t": "Celî Pano", "d": "Tezhip"}, {"k": "09d9ce82", "c": "tezhip", "t": "Diyagonal Kompozisyon", "d": "Tezhip · mavi"}, {"k": "b7f36242", "c": "tezhip", "t": "Çiçekli Bordür", "d": "Tezhip"}];
+const SRC={"8353d19a": "../images/work-oval-medallion.jpg", "d83f2bc6": "../images/work-besmele.jpg", "1f20ba01": "../images/work-illuminated-besmele.jpg", "0baa4dcf": "../images/work-crimson-panel.jpg", "c388a88d": "../images/work-ya-latif.jpg", "229fe039": "../images/work-manuscript-page.jpg", "9a1406f9": "../images/work-hilye-composition.jpg", "12bc1a78": "../images/work-gold-on-navy.jpg", "c0ca31d9": "../images/work-esma-ul-husna.jpg", "d448edd9": "../images/work-umber-gold.jpg", "374154f3": "../images/work-hilye-in-red.jpg", "b09077c5": "../images/work-ottoman-script-panel.jpg", "dd41993e": "../images/work-celi-panel.jpg", "09d9ce82": "../images/work-diagonal-composition.jpg", "b7f36242": "../images/work-floral-border.jpg"};
+const g=document.getElementById('gallery');
+let visible=[];
+function esc(s){return s.replace(/[&<>"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]))}
+function render(f){
+  g.innerHTML='';visible=works.filter(w=>f==='all'||w.c===f);
+  visible.forEach((w,i)=>{
+    const fig=document.createElement('figure');
+    fig.innerHTML=`<img loading="lazy" src="${SRC[w.k]}" alt="${esc(w.t)}"><figcaption><i>${esc(w.t)}</i><span>${esc(w.d)}</span></figcaption>`;
+    fig.onclick=()=>open(i);g.appendChild(fig);
+  });
+}
+document.querySelectorAll('.filters button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.filters button').forEach(x=>x.setAttribute('aria-pressed',x===b));
+  render(b.dataset.f);
+});
+const lb=document.getElementById('lb'),li=document.getElementById('lbimg'),lc=document.getElementById('lbcap');let cur=0;
+function open(i){cur=(i+visible.length)%visible.length;const w=visible[cur];li.src=SRC[w.k];li.alt=w.t;lc.innerHTML=`${esc(w.t)}<span>${esc(w.d)}</span>`;lb.hidden=false}
+lb.querySelector('.x').onclick=()=>lb.hidden=true;
+lb.querySelector('.p').onclick=e=>{e.stopPropagation();open(cur-1)};
+lb.querySelector('.n').onclick=e=>{e.stopPropagation();open(cur+1)};
+lb.onclick=e=>{if(e.target===lb)lb.hidden=true};
+document.addEventListener('keydown',e=>{if(lb.hidden)return;if(e.key==='Escape')lb.hidden=true;if(e.key==='ArrowLeft')open(cur-1);if(e.key==='ArrowRight')open(cur+1)});
+render('all');
+
+(function(){document.querySelectorAll('[data-lang]').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('at-lang',a.dataset.lang)}catch(e){}})})})();
+</script>
+
+</body></html>
