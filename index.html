@@ -143,6 +143,12 @@ section{padding-block:96px}
 .exh-photos figure:hover img{transform:scale(1.03)}
 .exh-photos figcaption{position:absolute;left:0;right:0;bottom:0;padding:34px 12px 10px;background:linear-gradient(transparent,rgba(8,12,24,.85));font-size:12px;letter-spacing:.05em;color:#f3ead6}
 @media (max-width:860px){.exh-photos{grid-template-columns:repeat(2,1fr)}}
+.at-photos{display:grid;grid-template-columns:1fr 1fr;gap:12px;min-width:0}
+.at-photos figure{margin:0;position:relative;overflow:hidden;aspect-ratio:4/5;cursor:zoom-in;border:1px solid var(--line)}
+.at-photos img{width:100%;height:100%;object-fit:cover;object-position:50% 35%;display:block;border:0;transition:transform .5s ease}
+.at-photos figure:hover img{transform:scale(1.03)}
+.at-photos figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 12px 10px;background:linear-gradient(transparent,rgba(8,12,24,.85));font-size:12px;letter-spacing:.04em;color:#f3ead6}
+.atelier{align-items:start}
 .exh-list{margin-top:56px;display:grid;gap:0;border-top:1px solid color-mix(in srgb,var(--gold-soft) 35%,transparent)}
 .exh-list div{display:grid;grid-template-columns:120px 1fr auto;gap:20px;padding:20px 0;border-bottom:1px solid color-mix(in srgb,var(--gold-soft) 35%,transparent);align-items:baseline}
 .exh-list b{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:24px;color:var(--gold-soft)}
@@ -484,7 +490,12 @@ footer .fsoc a:hover{border-bottom-color:currentColor}
 
 <section id="atelier">
   <div class="wrap atelier">
-    <img src="images/10-traditional-building-housing-the-atelier.jpg" alt="Traditional building housing the atelier">
+    <div class="at-photos" id="at-photos">
+      <figure><img loading="lazy" src="images/at-A1.jpg" alt="Aysel Toprak at the entrance of her atelier, Ulucanlar Art Street"><figcaption>Aysel Toprak at the entrance of her atelier, Ulucanlar Art Street</figcaption></figure>
+      <figure><img loading="lazy" src="images/at-A2.jpg" alt="During a lesson with her students"><figcaption>During a lesson with her students</figcaption></figure>
+      <figure><img loading="lazy" src="images/at-A3.jpg" alt="Demonstrating to a student during a lesson"><figcaption>Demonstrating to a student during a lesson</figcaption></figure>
+      <figure><img loading="lazy" src="images/at-A4.jpg" alt="A group lesson"><figcaption>A group lesson</figcaption></figure>
+    </div>
     <div class="txt">
 <div class="eyebrow">Atelier &amp; Teaching</div>
       <h2 style="font-size:clamp(34px,4.5vw,52px)">Learning the art by the master's hand</h2>
@@ -551,7 +562,7 @@ let LBL=null;
 function show(){const it=LBL[cur];li.src=it.src;li.alt=it.t;lc.innerHTML=esc(it.t)+(it.d?`<span>${esc(it.d)}</span>`:'');lb.hidden=false}
 function open(i){LBL=visible.map(w=>({src:SRC[w.k],t:w.t,d:w.d}));cur=(i+LBL.length)%LBL.length;show()}
 function step(d){cur=(cur+d+LBL.length)%LBL.length;show()}
-(function(){const figs=[...document.querySelectorAll('#exh-photos figure')];figs.forEach((fg,i)=>fg.onclick=()=>{LBL=figs.map(x=>({src:x.querySelector('img').getAttribute('src'),t:x.querySelector('figcaption').textContent,d:''}));cur=i;show()})})();
+['#exh-photos','#at-photos'].forEach(sel=>{const figs=[...document.querySelectorAll(sel+' figure')];figs.forEach((fg,i)=>fg.onclick=()=>{LBL=figs.map(x=>({src:x.querySelector('img').getAttribute('src'),t:x.querySelector('figcaption').textContent,d:''}));cur=i;show()})});
 lb.querySelector('.x').onclick=()=>lb.hidden=true;
 lb.querySelector('.p').onclick=e=>{e.stopPropagation();step(-1)};
 lb.querySelector('.n').onclick=e=>{e.stopPropagation();step(1)};
