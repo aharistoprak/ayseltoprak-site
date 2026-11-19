@@ -118,6 +118,9 @@ section{padding-block:96px}
 .gallery{columns:3 300px;column-gap:22px}
 .gallery figure{break-inside:avoid;margin:0 0 22px;cursor:zoom-in}
 .gallery img{width:100%;display:block;border:1px solid var(--line);transition:transform .4s ease,box-shadow .4s ease}
+.gallery img[src$=".webp"],.lb img[src$=".webp"]{border:0}
+.gallery img[src*="w-M3"]{aspect-ratio:3/5;object-fit:cover;object-position:50% 28%}
+.gallery figure:hover img[src$=".webp"]{box-shadow:none}
 .gallery figure:hover img{transform:translateY(-3px);box-shadow:0 14px 30px -18px rgba(0,0,0,.5)}
 .gallery figcaption{padding-top:10px;display:flex;justify-content:space-between;gap:10px;font-size:14px}
 .gallery figcaption i{font-family:"Cormorant Garamond",serif;font-size:18px;font-style:normal}
@@ -358,14 +361,15 @@ footer .fsoc a:hover{border-bottom-color:currentColor}
     <div class="head">
       <div class="eyebrow">Seçilmiş Eserler</div>
       <h2>Eserler</h2>
-      <p>Özgün <span translate="no">tezhip</span> ve hilye çalışmaları. Büyütmek için bir esere dokunun.</p>
+      <p>Özgün <span translate="no">tezhip</span>, minyatür, <span translate="no">ebru</span> ve <span translate="no">çini</span> çalışmalarından bir seçki. Büyütmek için bir esere dokunun.</p>
       <p style="font-size:14px">Bu levhalardaki hat, usta hattatlara aittir; <span translate="no">tezhip</span> <span translate="no">Aysel Toprak</span>'a aittir.</p>
     </div>
     <div class="filters" role="group">
       <button data-f="all" aria-pressed="true">Tümü</button>
       <button data-f="tezhip" aria-pressed="false"><span translate="no">Tezhip</span></button>
-      <button data-f="hilye" aria-pressed="false">Hilye</button>
-      <button data-f="calli" aria-pressed="false">Tezhipli Hat</button>
+      <button data-f="minyatur" aria-pressed="false">Minyatür</button>
+      <button data-f="ebru" aria-pressed="false"><span translate="no">Ebru</span></button>
+      <button data-f="cini" aria-pressed="false"><span translate="no">Çini</span></button>
     </div>
     <div class="gallery" id="gallery"></div>
   </div>
@@ -489,8 +493,8 @@ footer .fsoc a:hover{border-bottom-color:currentColor}
 </div>
 
 <script>
-const works=[{"k": "8353d19a", "c": "tezhip", "t": "Oval Madalyon", "d": "Tezhip · lacivert zemin"}, {"k": "d83f2bc6", "c": "calli", "t": "Besmele", "d": "Tezhip"}, {"k": "1f20ba01", "c": "calli", "t": "Tezhipli Besmele", "d": "Tezhip"}, {"k": "0baa4dcf", "c": "tezhip", "t": "Kırmızı Zeminli Pano", "d": "Tezhip · altın varak"}, {"k": "c388a88d", "c": "calli", "t": "Yâ Latîf", "d": "Tezhip"}, {"k": "229fe039", "c": "tezhip", "t": "El Yazması Sayfa", "d": "Tezhip"}, {"k": "9a1406f9", "c": "hilye", "t": "Hilye Kompozisyonu", "d": "Hilye"}, {"k": "12bc1a78", "c": "tezhip", "t": "Lacivert Üzerine Altın", "d": "Tezhip"}, {"k": "c0ca31d9", "c": "calli", "t": "Esmâ-ül Hüsnâ", "d": "Tezhip"}, {"k": "d448edd9", "c": "tezhip", "t": "Kahve ve Altın", "d": "Tezhip"}, {"k": "374154f3", "c": "hilye", "t": "Kırmızı Hilye", "d": "Hilye"}, {"k": "b09077c5", "c": "calli", "t": "Osmanlıca Yazı Panosu", "d": "Tezhip"}, {"k": "dd41993e", "c": "calli", "t": "Celî Pano", "d": "Tezhip"}, {"k": "09d9ce82", "c": "tezhip", "t": "Diyagonal Kompozisyon", "d": "Tezhip · mavi"}, {"k": "b7f36242", "c": "tezhip", "t": "Çiçekli Bordür", "d": "Tezhip"}];
-const SRC={"8353d19a": "../images/work-oval-medallion.jpg", "d83f2bc6": "../images/work-besmele.jpg", "1f20ba01": "../images/work-illuminated-besmele.jpg", "0baa4dcf": "../images/work-crimson-panel.jpg", "c388a88d": "../images/work-ya-latif.jpg", "229fe039": "../images/work-manuscript-page.jpg", "9a1406f9": "../images/work-hilye-composition.jpg", "12bc1a78": "../images/work-gold-on-navy.jpg", "c0ca31d9": "../images/work-esma-ul-husna.jpg", "d448edd9": "../images/work-umber-gold.jpg", "374154f3": "../images/work-hilye-in-red.jpg", "b09077c5": "../images/work-ottoman-script-panel.jpg", "dd41993e": "../images/work-celi-panel.jpg", "09d9ce82": "../images/work-diagonal-composition.jpg", "b7f36242": "../images/work-floral-border.jpg"};
+const works=[{"k": "T1", "c": "tezhip", "t": "Hilye-i Şerif", "d": "Tezhip"}, {"k": "M1", "c": "minyatur", "t": "Laleli kompozisyon", "d": "Minyatür"}, {"k": "T4", "c": "tezhip", "t": "Tezhipli levha", "d": "Tezhip"}, {"k": "C2", "c": "cini", "t": "Çini tabak", "d": "Çini"}, {"k": "T3", "c": "tezhip", "t": "Tezhipli levha", "d": "Tezhip"}, {"k": "Eb2", "c": "ebru", "t": "Karanfil", "d": "Ebru"}, {"k": "T5", "c": "tezhip", "t": "Tezhipli levha", "d": "Tezhip"}, {"k": "T12", "c": "tezhip", "t": "Besmele", "d": "Tezhip"}, {"k": "C1", "c": "cini", "t": "Çini tabak", "d": "Çini"}, {"k": "T2", "c": "tezhip", "t": "Hilye-i Şerif", "d": "Tezhip"}, {"k": "Eb1", "c": "ebru", "t": "Sümbül", "d": "Ebru"}, {"k": "T6", "c": "tezhip", "t": "Tezhipli levha", "d": "Tezhip"}, {"k": "M2", "c": "minyatur", "t": "Kâbe", "d": "Minyatür"}, {"k": "T7", "c": "tezhip", "t": "Tezhipli levha", "d": "Tezhip"}, {"k": "T8", "c": "tezhip", "t": "Tezhipli levha", "d": "Tezhip"}, {"k": "C3", "c": "cini", "t": "Çini tabak", "d": "Çini"}, {"k": "T9", "c": "tezhip", "t": "Esmâ-ül Hüsnâ", "d": "Tezhip"}, {"k": "Eb3", "c": "ebru", "t": "Ebru kenarlı levha", "d": "Ebru"}, {"k": "T10", "c": "tezhip", "t": "Tezhipli levha", "d": "Tezhip"}, {"k": "M3", "c": "minyatur", "t": "Galata Kulesi", "d": "Minyatür"}, {"k": "T11", "c": "tezhip", "t": "Tezhipli levha", "d": "Tezhip"}];
+const SRC={"T1": "../images/w-T1.jpg", "M1": "../images/w-M1.jpg", "T4": "../images/w-T4.jpg", "C2": "../images/w-C2.webp", "T3": "../images/w-T3.jpg", "Eb2": "../images/w-Eb2.jpg", "T5": "../images/w-T5.jpg", "T12": "../images/w-T12.jpg", "C1": "../images/w-C1.webp", "T2": "../images/w-T2.jpg", "Eb1": "../images/w-Eb1.jpg", "T6": "../images/w-T6.jpg", "M2": "../images/w-M2.webp", "T7": "../images/w-T7.jpg", "T8": "../images/w-T8.jpg", "C3": "../images/w-C3.webp", "T9": "../images/w-T9.jpg", "Eb3": "../images/w-Eb3.jpg", "T10": "../images/w-T10.jpg", "M3": "../images/w-M3.jpg", "T11": "../images/w-T11.jpg"};
 const g=document.getElementById('gallery');
 let visible=[];
 function esc(s){return s.replace(/[&<>"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]))}
@@ -498,7 +502,7 @@ function render(f){
   g.innerHTML='';visible=works.filter(w=>f==='all'||w.c===f);
   visible.forEach((w,i)=>{
     const fig=document.createElement('figure');
-    fig.innerHTML=`<img loading="lazy" src="${SRC[w.k]}" alt="${esc(w.t)}"><figcaption><i>${esc(w.t)}</i><span>${esc(w.d)}</span></figcaption>`;
+    fig.innerHTML=`<img loading="lazy" src="${SRC[w.k]}" alt="${esc(w.t)}"><figcaption><i>${esc(w.t)}</i><span translate="no">${esc(w.d)}</span></figcaption>`;
     fig.onclick=()=>open(i);g.appendChild(fig);
   });
 }
