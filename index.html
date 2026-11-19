@@ -233,6 +233,17 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 footer .fsoc a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
 footer .fsoc a:hover{border-bottom-color:currentColor}
 .bio p+p{margin-top:0}
+
+/* tezhip intro */
+.tz{background:var(--bg-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.tz .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:64px;align-items:center}
+.tz h2{margin:14px 0 22px;font-size:clamp(36px,5vw,58px)}
+.tz p{max-width:62ch;color:var(--fg);line-height:1.75;margin:0 0 16px}
+.tz p:last-child{margin-bottom:0}
+.tz blockquote{margin:0;padding:28px 0 28px 32px;border-left:2px solid var(--gold)}
+.tz blockquote q{display:block;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:clamp(28px,3.4vw,40px);line-height:1.25;color:var(--fg);quotes:none}
+.tz blockquote cite{display:block;margin-top:16px;font-style:normal;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+@media (max-width:860px){.tz .wrap{grid-template-columns:1fr;gap:36px}}
 </style>
 <style>body{margin:0}img{max-width:100%}</style>
 </head>
@@ -263,18 +274,30 @@ footer .fsoc a:hover{border-bottom-color:currentColor}
       <div class="eyebrow" style="color:var(--gold-soft)">Master Illuminator · Müzehhibe</div>
       <h1 style="margin-top:18px">The art of <em>gold</em> on paper</h1>
       <p class="tr">Kâğıt üzerinde altının sanatı</p>
-      <p class="lede">Aysel Toprak has practiced <i>tezhip</i> since 1999 — the classical Turkish-Islamic art of illuminating manuscripts and calligraphy with gold and hand-prepared pigments in geometric and floral ornament. Alongside illumination she has studied <i>çini</i>, miniature painting and <i>ebru</i>.</p>
+      <p class="lede">Aysel Toprak has practiced the classical Turkish-Islamic art of <i>tezhip</i> since 1999. Alongside illumination she has studied <i>çini</i>, miniature painting and <i>ebru</i>.</p>
       <div class="cta">
         <a class="btn solid" href="#works">View the Works</a>
         <a class="btn" href="#exhibitions">Exhibitions &amp; CV</a>
       </div>
     </div>
     <figure class="hero-art" style="margin:0">
-      <div class="frame"><img src="images/01-illuminated-panel-with-deep-red-ground-a.jpg" alt=""></div>
-      <figcaption>Tezhip · gold leaf &amp; natural pigments</figcaption>
+      <div class="frame"><img src="images/01-illuminated-panel-with-deep-red-ground-a.jpg" alt="Ayat al-Kursi and the Nazar Verse, illumination by Aysel Toprak"></div>
+      <figcaption>Ayat al-Kursi and the Nazar Verse · Calligraphy: Muhammad Ka'ka · Illumination: Aysel Toprak</figcaption>
     </figure>
   </div>
 </header>
+
+<section id="tezhip" class="tz">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">The Art</div>
+      <h2>What is tezhip?</h2>
+      <p>Tezhip is the art of illuminating the written word, one of the traditional Turkish-Islamic arts. Its name comes from the Arabic root <i>zahab</i>, “gold”: tezhip means “gilding.” It is worked in 18–24 karat powdered gold and a range of colors. A man who practices it is called a <i>müzehhip</i>, a woman a <i>müzehhibe</i>, and the finished work a <i>müzehhep</i>.</p>
+      <p>Held in high esteem as a court art under the Seljuks and the Ottomans, tezhip adorned above all the Qur’an, as well as imperial decrees, literary texts, books and calligraphic panels.</p>
+    </div>
+    <blockquote><q>“Tezhip is the garment of the written word.”</q><cite>The late Necmeddin Okyay</cite></blockquote>
+  </div>
+</section>
 
 <section id="about">
   <div class="wrap about">

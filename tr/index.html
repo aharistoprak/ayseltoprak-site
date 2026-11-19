@@ -233,6 +233,17 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 footer .fsoc a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
 footer .fsoc a:hover{border-bottom-color:currentColor}
 .bio p+p{margin-top:0}
+
+/* tezhip intro */
+.tz{background:var(--bg-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.tz .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:64px;align-items:center}
+.tz h2{margin:14px 0 22px;font-size:clamp(36px,5vw,58px)}
+.tz p{max-width:62ch;color:var(--fg);line-height:1.75;margin:0 0 16px}
+.tz p:last-child{margin-bottom:0}
+.tz blockquote{margin:0;padding:28px 0 28px 32px;border-left:2px solid var(--gold)}
+.tz blockquote q{display:block;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:clamp(28px,3.4vw,40px);line-height:1.25;color:var(--fg);quotes:none}
+.tz blockquote cite{display:block;margin-top:16px;font-style:normal;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+@media (max-width:860px){.tz .wrap{grid-template-columns:1fr;gap:36px}}
 </style>
 <style>body{margin:0}img{max-width:100%}</style>
 </head>
@@ -260,18 +271,30 @@ footer .fsoc a:hover{border-bottom-color:currentColor}
       <div class="eyebrow" style="color:var(--gold-soft)">Müzehhibe</div>
       <h1 style="margin-top:18px">Kâğıt üzerinde <em>altının</em> sanatı</h1>
       <p class="tr">The art of gold on paper</p>
-      <p class="lede">Aysel Toprak 1999'dan bu yana <i>tezhip</i> sanatıyla uğraşıyor: el yazmalarını ve hat levhalarını altın ve elde hazırlanan boyalarla, geometrik ve bitkisel motiflerle süsleyen klasik Türk-İslam sanatı. Tezhibin yanı sıra çini, minyatür ve ebru da çalışmıştır.</p>
+      <p class="lede">Aysel Toprak 1999'dan bu yana klasik Türk-İslam sanatı <i>tezhip</i> ile uğraşıyor. Tezhibin yanı sıra çini, minyatür ve ebru da çalışmıştır.</p>
       <div class="cta">
         <a class="btn solid" href="#works">Eserleri İnceleyin</a>
         <a class="btn" href="#exhibitions">Sergiler ve Özgeçmiş</a>
       </div>
     </div>
     <figure class="hero-art" style="margin:0">
-      <div class="frame"><img src="../images/01-illuminated-panel-with-deep-red-ground-a.jpg" alt=""></div>
-      <figcaption>Tezhip · altın varak ve doğal boyalar</figcaption>
+      <div class="frame"><img src="../images/01-illuminated-panel-with-deep-red-ground-a.jpg" alt="Ayetelkürsi ve Nazar Ayeti, tezhip: Aysel Toprak"></div>
+      <figcaption>Ayetelkürsi ve Nazar Ayeti · Hat: Muhammed Ka'ka · Tezhip: Aysel Toprak</figcaption>
     </figure>
   </div>
 </header>
+
+<section id="tezhip" class="tz">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Sanat</div>
+      <h2>Tezhip nedir?</h2>
+      <p>Tezhip, geleneksel Türk-İslam sanatlarından biri olan yazı süsleme sanatıdır. Adını Arapçada “altın” anlamına gelen <i>zeheb</i> kökünden alır; tezhip “altınlama” demektir. 18–24 ayar ezilmiş altın ve çeşitli renklerde boyalarla yapılır. Bu sanatı icra eden erkek sanatçıya <i>müzehhip</i>, kadın sanatçıya <i>müzehhibe</i>, ortaya çıkan esere ise <i>müzehhep</i> denir.</p>
+      <p>Selçuklu ve Osmanlı dönemlerinde saray sanatı olarak büyük itibar gören tezhip; başta Kur’ân-ı Kerîm olmak üzere padişah fermanlarının, edebî metinlerin, kitapların ve hat levhalarının süslenmesinde kullanılmıştır.</p>
+    </div>
+    <blockquote><q>“Tezhip, yazının elbisesidir.”</q><cite>Merhum Necmeddin Okyay</cite></blockquote>
+  </div>
+</section>
 
 <section id="about">
   <div class="wrap about">
