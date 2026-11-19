@@ -54,6 +54,11 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--navy) 94%,transparent);backdrop-filter:blur(6px);color:var(--on-navy)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
 .brand{font-family:"Cormorant Garamond",serif;font-size:22px;letter-spacing:.06em}
+.brand{display:grid;grid-template-columns:auto auto;column-gap:14px;align-items:center;justify-content:start}
+.brand a.home{grid-column:1;justify-self:center}
+.brand .bsub{display:contents}
+.brand .bsub small{grid-column:1;justify-self:center}
+.brand .bsub .soc{grid-column:2;grid-row:2;margin-left:0}
 .brand small{display:block;font-family:"Jost",sans-serif;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--on-navy-muted)}
 nav ul{list-style:none;display:flex;gap:26px;margin:0;padding:0;font-size:13px;letter-spacing:.16em;text-transform:uppercase}
 nav a{text-decoration:none;color:var(--on-navy-muted);transition:color .2s}
