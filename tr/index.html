@@ -135,6 +135,14 @@ section{padding-block:96px}
 .exh-grid img{width:100%;height:100%;object-fit:cover;display:block}
 .exh-grid .big{grid-row:span 2;aspect-ratio:4/4.3}
 .exh-grid figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 18px 14px;background:linear-gradient(transparent,rgba(8,12,24,.85));font-size:13px;letter-spacing:.06em;color:#f3ead6}
+.exh-photos{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.exh-photos figure{margin:0;position:relative;overflow:hidden;aspect-ratio:4/3;cursor:zoom-in;background:#0b1020}
+.exh-photos figure:first-child{grid-column:span 2;grid-row:span 2}
+.exh-photos figure.wide{grid-column:span 2;aspect-ratio:8.2/3}
+.exh-photos img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block;transition:transform .5s ease}
+.exh-photos figure:hover img{transform:scale(1.03)}
+.exh-photos figcaption{position:absolute;left:0;right:0;bottom:0;padding:34px 12px 10px;background:linear-gradient(transparent,rgba(8,12,24,.85));font-size:12px;letter-spacing:.05em;color:#f3ead6}
+@media (max-width:860px){.exh-photos{grid-template-columns:repeat(2,1fr)}}
 .exh-list{margin-top:56px;display:grid;gap:0;border-top:1px solid color-mix(in srgb,var(--gold-soft) 35%,transparent)}
 .exh-list div{display:grid;grid-template-columns:120px 1fr auto;gap:20px;padding:20px 0;border-bottom:1px solid color-mix(in srgb,var(--gold-soft) 35%,transparent);align-items:baseline}
 .exh-list b{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:24px;color:var(--gold-soft)}
@@ -382,10 +390,26 @@ footer .fsoc a:hover{border-bottom-color:currentColor}
       <h2>Sergiler</h2>
       <p>Türkiye'de ve ABD'de kişisel, karma ve konulu sergiler.</p>
     </div>
-    <div class="exh-grid">
-      <figure class="big"><img src="../images/07-aysel-toprak-with-her-work-at-an-exhibit.jpg" alt="Aysel Toprak bir sergide eseriyle"><figcaption>Sanatçı eseriyle</figcaption></figure>
-      <figure><img src="../images/08-exhibition-opening-ribbon-cutting.jpg" alt="Sergi açılışında kurdele kesimi"><figcaption>Sergi açılışı</figcaption></figure>
-      <figure><img src="../images/09-visitors-at-the-exhibition.jpg" alt="Sergideki ziyaretçiler"><figcaption>Misafirler ve sanatçı dostlarıyla</figcaption></figure>
+    <div class="exh-photos" id="exh-photos">
+      <figure data-i="0"><img loading="lazy" src="../images/ex-S2.jpg" alt="Sergi açılışı"><figcaption>Sergi açılışı</figcaption></figure>
+      <figure data-i="1"><img loading="lazy" src="../images/ex-S22.jpg" alt="Atölye ziyareti"><figcaption>Atölye ziyareti</figcaption></figure>
+      <figure data-i="2"><img loading="lazy" src="../images/ex-S3.jpg" alt="Atölye ziyareti"><figcaption>Atölye ziyareti</figcaption></figure>
+      <figure data-i="3"><img loading="lazy" src="../images/ex-S12.jpg" alt="Eser takdimi"><figcaption>Eser takdimi</figcaption></figure>
+      <figure data-i="4"><img loading="lazy" src="../images/ex-S15.jpg" alt="Atölye ziyareti"><figcaption>Atölye ziyareti</figcaption></figure>
+      <figure data-i="5"><img loading="lazy" src="../images/ex-S16.jpg" alt="Atölyede"><figcaption>Atölyede</figcaption></figure>
+      <figure data-i="6"><img loading="lazy" src="../images/ex-S21.jpg" alt="Zakat Foundation sergisi · Newark, Delaware · 2025"><figcaption>Zakat Foundation sergisi · Newark, Delaware · 2025</figcaption></figure>
+      <figure data-i="7"><img loading="lazy" src="../images/ex-S26.jpg" alt="Zakat Foundation sergisi · 2025"><figcaption>Zakat Foundation sergisi · 2025</figcaption></figure>
+      <figure data-i="8"><img loading="lazy" src="../images/ex-S24.jpg" alt="Eser takdimi"><figcaption>Eser takdimi</figcaption></figure>
+      <figure data-i="9" class="wide"><img loading="lazy" src="../images/ex-S19.jpg" alt="Sergide eserleriyle"><figcaption>Sergide eserleriyle</figcaption></figure>
+      <figure data-i="10"><img loading="lazy" src="../images/ex-S6.jpg" alt="Sergi ziyareti"><figcaption>Sergi ziyareti</figcaption></figure>
+      <figure data-i="11"><img loading="lazy" src="../images/ex-S17.jpg" alt="Sergi ziyareti"><figcaption>Sergi ziyareti</figcaption></figure>
+      <figure data-i="12"><img loading="lazy" src="../images/ex-S11.jpg" alt="Sergi ziyareti"><figcaption>Sergi ziyareti</figcaption></figure>
+      <figure data-i="13"><img loading="lazy" src="../images/ex-S4.jpg" alt="Sergi ziyareti"><figcaption>Sergi ziyareti</figcaption></figure>
+      <figure data-i="14"><img loading="lazy" src="../images/ex-S9.jpg" alt="Sergi açılışı"><figcaption>Sergi açılışı</figcaption></figure>
+      <figure data-i="15"><img loading="lazy" src="../images/ex-S18.jpg" alt="Sergi ziyareti"><figcaption>Sergi ziyareti</figcaption></figure>
+      <figure data-i="16"><img loading="lazy" src="../images/ex-S1.jpg" alt="Eser takdimi"><figcaption>Eser takdimi</figcaption></figure>
+      <figure data-i="17"><img loading="lazy" src="../images/ex-S23.jpg" alt="Eser takdimi"><figcaption>Eser takdimi</figcaption></figure>
+      <figure data-i="18" class="wide"><img loading="lazy" src="../images/ex-S7.jpg" alt="Artı5TV stüdyosu"><figcaption>Artı5TV stüdyosu</figcaption></figure>
     </div>
     <div class="exh-list">
 <div><b>Yakında</b><span>Kur'ân-ı Kerim'de Peygamber Duaları Sergisi</span><em>Hazırlık aşamasında</em></div>
@@ -511,12 +535,16 @@ document.querySelectorAll('.filters button').forEach(b=>b.onclick=()=>{
   render(b.dataset.f);
 });
 const lb=document.getElementById('lb'),li=document.getElementById('lbimg'),lc=document.getElementById('lbcap');let cur=0;
-function open(i){cur=(i+visible.length)%visible.length;const w=visible[cur];li.src=SRC[w.k];li.alt=w.t;lc.innerHTML=`${esc(w.t)}<span>${esc(w.d)}</span>`;lb.hidden=false}
+let LBL=null;
+function show(){const it=LBL[cur];li.src=it.src;li.alt=it.t;lc.innerHTML=esc(it.t)+(it.d?`<span>${esc(it.d)}</span>`:'');lb.hidden=false}
+function open(i){LBL=visible.map(w=>({src:SRC[w.k],t:w.t,d:w.d}));cur=(i+LBL.length)%LBL.length;show()}
+function step(d){cur=(cur+d+LBL.length)%LBL.length;show()}
+(function(){const figs=[...document.querySelectorAll('#exh-photos figure')];figs.forEach((fg,i)=>fg.onclick=()=>{LBL=figs.map(x=>({src:x.querySelector('img').getAttribute('src'),t:x.querySelector('figcaption').textContent,d:''}));cur=i;show()})})();
 lb.querySelector('.x').onclick=()=>lb.hidden=true;
-lb.querySelector('.p').onclick=e=>{e.stopPropagation();open(cur-1)};
-lb.querySelector('.n').onclick=e=>{e.stopPropagation();open(cur+1)};
+lb.querySelector('.p').onclick=e=>{e.stopPropagation();step(-1)};
+lb.querySelector('.n').onclick=e=>{e.stopPropagation();step(1)};
 lb.onclick=e=>{if(e.target===lb)lb.hidden=true};
-document.addEventListener('keydown',e=>{if(lb.hidden)return;if(e.key==='Escape')lb.hidden=true;if(e.key==='ArrowLeft')open(cur-1);if(e.key==='ArrowRight')open(cur+1)});
+document.addEventListener('keydown',e=>{if(lb.hidden)return;if(e.key==='Escape')lb.hidden=true;if(e.key==='ArrowLeft')step(-1);if(e.key==='ArrowRight')step(1)});
 render('all');
 
 (function(){document.querySelectorAll('[data-lang]').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('at-lang',a.dataset.lang)}catch(e){}})})})();
