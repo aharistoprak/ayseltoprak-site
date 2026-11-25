@@ -128,6 +128,8 @@ section{padding-block:96px}
 .gallery figure:hover img[src$=".webp"]{box-shadow:none}
 .gallery figure:hover img{transform:translateY(-3px);box-shadow:0 14px 30px -18px rgba(0,0,0,.5)}
 .gallery figcaption{padding-top:10px;display:flex;justify-content:space-between;gap:10px;font-size:14px}
+.gallery figcaption .cap{display:grid;gap:2px;min-width:0}.gallery figcaption .cap span{font-size:inherit;letter-spacing:0;text-transform:none;padding:0;color:inherit;white-space:normal}.gallery figcaption small{font-size:12.5px;color:var(--muted);line-height:1.4}
+.disc-card .kn{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px;margin-top:4px;line-height:1.5}
 .gallery figcaption i{font-family:"Cormorant Garamond",serif;font-size:18px;font-style:normal}
 .gallery figcaption span{color:var(--muted);font-size:11px;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;padding-top:4px}
 
@@ -188,7 +190,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 .lb figure{margin:0;max-width:min(1000px,100%);display:grid;gap:14px;justify-items:center}
 .lb img{max-height:80vh;width:auto;max-width:100%;border:1px solid #3a3320}
 .lb figcaption{color:#e6dcc4;text-align:center;font-family:"Cormorant Garamond",serif;font-size:22px}
-.lb figcaption span{display:block;font-family:"Jost",sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#a99d7c;margin-top:4px}
+.lb figcaption span{display:block;font-family:"Jost",sans-serif;font-size:13.5px;letter-spacing:.03em;line-height:1.6;max-width:60ch;margin-inline:auto;text-transform:none;color:#a99d7c;margin-top:4px}
 .lb button{position:absolute;background:none;border:1px solid #6c5c32;color:#e6dcc4;width:44px;height:44px;font-size:20px;cursor:pointer}
 .lb .x{top:calc(18px + env(safe-area-inset-top,0px));right:calc(18px + env(safe-area-inset-right,0px))}
 .lb .p{left:calc(18px + env(safe-area-inset-left,0px));top:50%}
@@ -361,19 +363,19 @@ footer .fsoc a:hover{border-bottom-color:currentColor}
     <div class="disc-grid">
       <article class="disc-card">
         <img src="images/disc-tezhip-el-hayy.jpg" alt="Illuminated panel with the divine name al-Hayy, tezhip by Aysel Toprak">
-        <div class="body"><span class="tk"><span translate="no">Tezhip</span></span><h3>Illumination</h3><p>Gold and pigment ornament — <i>rumi</i>, <i>hatai</i> and <i>bulut</i> motifs — that frames and honors the written word.</p></div>
+        <div class="body"><span class="tk"><span translate="no">Tezhip</span></span><h3>Illumination</h3><p>Gold and pigment ornament — <i>rumi</i>, <i>hatai</i> and <i>bulut</i> motifs — that frames and honors the written word.</p><p class="kn">al-Hayy · Calligraphy: <span translate="no">Ayten Tiryaki</span> · 2016 · 22-karat gold on murakka, classical tezhip · 45 × 50 cm</p></div>
       </article>
       <article class="disc-card">
         <img src="images/disc-ebru.jpg" alt="Ebru with heart (gönül) motifs on a red ground, by Aysel Toprak">
-        <div class="body"><span class="tk"><span translate="no">Ebru</span></span><h3>Marbling</h3><p>Pigments floated on thickened water and lifted onto paper — every sheet a single, unrepeatable moment.</p></div>
+        <div class="body"><span class="tk"><span translate="no">Ebru</span></span><h3>Marbling</h3><p>Pigments floated on thickened water and lifted onto paper — every sheet a single, unrepeatable moment.</p><p class="kn">Heart Ebru · 2025 · 30 × 42 cm</p></div>
       </article>
       <article class="disc-card">
         <img src="images/disc-minyatur-kiz-kulesi.jpg" alt="Miniature of the Maiden's Tower within the letter vav, by Aysel Toprak">
-        <div class="body"><span class="tk">Minyatür</span><h3>Miniature</h3><p>Fine-brush painting in the Ottoman miniature tradition — cityscapes, flowers and storytelling in jewel-like color.</p></div>
+        <div class="body"><span class="tk">Minyatür</span><h3>Miniature</h3><p>Fine-brush painting in the Ottoman miniature tradition — cityscapes, flowers and storytelling in jewel-like color.</p><p class="kn">Maiden’s Tower within the Letter Vav · 2023 · Miniature · 25 × 35 cm</p></div>
       </article>
       <article class="disc-card">
         <img src="images/disc-cini-tabak.jpg" alt="Hand-painted çini plate with carnation motifs by Aysel Toprak">
-        <div class="body"><span class="tk"><span translate="no">Çini</span></span><h3>Ceramics</h3><p>Plates and tiles hand-painted with İznik-inspired tulips, carnations and <i>saz</i> leaves, then glazed and fired.</p></div>
+        <div class="body"><span class="tk"><span translate="no">Çini</span></span><h3>Ceramics</h3><p>Plates and tiles hand-painted with İznik-inspired tulips, carnations and <i>saz</i> leaves, then glazed and fired.</p><p class="kn">Classical Çini Plate · 2026 · Ø 30 cm</p></div>
       </article>
     </div>
   </div>
@@ -547,7 +549,7 @@ footer .fsoc a:hover{border-bottom-color:currentColor}
 </div>
 
 <script>
-const works=[{"k": "T1", "c": "tezhip", "t": "Hilye-i Şerif", "d": "Tezhip"}, {"k": "M1", "c": "minyatur", "t": "Composition with tulips", "d": "Miniature"}, {"k": "T4", "c": "tezhip", "t": "Illuminated panel", "d": "Tezhip"}, {"k": "C2", "c": "cini", "t": "Çini plate", "d": "Çini"}, {"k": "T3", "c": "tezhip", "t": "Illuminated panel", "d": "Tezhip"}, {"k": "Eb2", "c": "ebru", "t": "Carnations", "d": "Ebru"}, {"k": "T5", "c": "tezhip", "t": "Illuminated panel", "d": "Tezhip"}, {"k": "T12", "c": "tezhip", "t": "Besmele", "d": "Tezhip"}, {"k": "C1", "c": "cini", "t": "Çini plate", "d": "Çini"}, {"k": "T2", "c": "tezhip", "t": "Hilye-i Şerif", "d": "Tezhip"}, {"k": "Eb1", "c": "ebru", "t": "Hyacinth", "d": "Ebru"}, {"k": "T6", "c": "tezhip", "t": "Illuminated panel", "d": "Tezhip"}, {"k": "M2", "c": "minyatur", "t": "The Kaaba", "d": "Miniature"}, {"k": "T7", "c": "tezhip", "t": "Illuminated panel", "d": "Tezhip"}, {"k": "T8", "c": "tezhip", "t": "Illuminated panel", "d": "Tezhip"}, {"k": "C3", "c": "cini", "t": "Çini plate", "d": "Çini"}, {"k": "T9", "c": "tezhip", "t": "Esmâ-ül Hüsnâ", "d": "Tezhip"}, {"k": "Eb3", "c": "ebru", "t": "Panel with ebru border", "d": "Ebru"}, {"k": "T10", "c": "tezhip", "t": "Illuminated panel", "d": "Tezhip"}, {"k": "M3", "c": "minyatur", "t": "Galata Tower", "d": "Miniature"}, {"k": "T11", "c": "tezhip", "t": "Illuminated panel", "d": "Tezhip"}];
+const works=[{"k": "T12", "c": "tezhip", "t": "Besmele", "d": "Tezhip", "h": "Muhammed Bedreddin Yazır", "y": "2024", "tk": "24-karat gold (green and yellow) on murakka, halkâr", "s": "55 × 100 cm"}, {"k": "M2", "c": "minyatur", "t": "The Kaaba", "d": "Miniature", "h": "", "y": "2026", "tk": "Miniature with kumlu (sand) ebru", "s": "35 × 35 cm"}, {"k": "T1", "c": "tezhip", "t": "Hilye-i Şerif", "d": "Tezhip", "h": "Halil İbrahim Kerkükî", "y": "2021", "tk": "24-karat gold on murakka, tezhip and halkâr", "s": "81 × 123 cm"}, {"k": "C2", "c": "cini", "t": "Classical Çini Plate", "d": "Çini", "h": "", "y": "2026", "tk": "", "s": "Ø 30 cm"}, {"k": "T2", "c": "tezhip", "t": "Hilye-i Şerif", "d": "Tezhip", "h": "Ebru Koyuncu", "y": "2026", "tk": "24-karat gold on murakka, classical tezhip", "s": "90 × 107 cm"}, {"k": "Eb3", "c": "ebru", "t": "“We can only truly see with the heart”", "d": "Ebru", "h": "Canan Arvas", "y": "2025", "tk": "Combed ebru (taraklı)", "s": "45 × 65 cm"}, {"k": "T11", "c": "tezhip", "t": "Fuzûlî’s Water Ode (Su Kasidesi)", "d": "Tezhip", "h": "Canan Arvas", "y": "2023", "tk": "24-karat gold on murakka, classical tezhip", "s": "87 × 120 cm"}, {"k": "T9", "c": "tezhip", "t": "Besmele in Tughra Form and Sûrat al-Rahmân", "d": "Tezhip", "h": "Muhammad Aqilî", "y": "2021", "tk": "23-karat gold on murakka, halkâr", "s": "85 × 105 cm"}, {"k": "C1", "c": "cini", "t": "Classical Çini Plate", "d": "Çini", "h": "", "y": "2026", "tk": "", "s": "Ø 30 cm"}, {"k": "T4", "c": "tezhip", "t": "Justice Is the Foundation of Rule", "d": "Tezhip", "h": "Muhammed Said Çetin", "y": "2026", "tk": "23-karat gold on murakka, classical tezhip", "s": "45 × 70 cm"}, {"k": "Eb2", "c": "ebru", "t": "Seven Carnations", "d": "Ebru", "h": "", "y": "2026", "tk": "", "s": "30 × 42 cm"}, {"k": "T3", "c": "tezhip", "t": "The Prophet's Supplication", "d": "Tezhip", "h": "Yusuf Şükrü Şafak", "y": "2011", "tk": "23-karat gold on murakka, classical tezhip", "s": "70 × 94 cm"}, {"k": "M1", "c": "minyatur", "t": "Yâ Vedûd", "d": "Miniature", "h": "Muharrem Gökşen", "y": "2023", "tk": "Miniature: tulips and the Prophet’s Mosque (Ravza-i Mutahhara)", "s": "35 × 40 cm"}, {"k": "T10", "c": "tezhip", "t": "This Too Shall Pass (Bu da Geçer Yâ Hû)", "d": "Tezhip", "h": "Abdulkadir Kaya", "y": "2019", "tk": "23-karat gold on murakka, classical tezhip", "s": "45 × 60 cm"}, {"k": "T6", "c": "tezhip", "t": "A Supplication to God", "d": "Tezhip", "h": "", "y": "2026", "tk": "22-karat gold on murakka, classical tezhip", "s": "60 × 76 cm"}, {"k": "C3", "c": "cini", "t": "Classical Çini Plate", "d": "Çini", "h": "", "y": "2026", "tk": "", "s": "Ø 30 cm"}, {"k": "T7", "c": "tezhip", "t": "al-Fattâh", "d": "Tezhip", "h": "Muhammed Mukahhal", "y": "2020", "tk": "23-karat gold on murakka, halkâr", "s": "60 × 60 cm"}, {"k": "Eb1", "c": "ebru", "t": "Hyacinth", "d": "Ebru", "h": "", "y": "2025", "tk": "", "s": "30 × 42 cm"}, {"k": "T5", "c": "tezhip", "t": "A Supplication to God", "d": "Tezhip", "h": "", "y": "2026", "tk": "22-karat gold on murakka, halkâr", "s": "40 × 70 cm"}, {"k": "M3", "c": "minyatur", "t": "Maiden’s Tower and Galata Tower", "d": "Miniature", "h": "", "y": "2021", "tk": "Miniature", "s": "30 × 70 cm"}, {"k": "T8", "c": "tezhip", "t": "Qur’anic verse: “For your Lord, be patient”", "d": "Tezhip", "h": "Abdulkadir Kaya", "y": "2016", "tk": "22-karat gold on murakka, halkâr", "s": "45 × 50 cm"}];
 const SRC={"T1": "images/w-T1.jpg", "M1": "images/w-M1.jpg", "T4": "images/w-T4.jpg", "C2": "images/w-C2.webp", "T3": "images/w-T3.jpg", "Eb2": "images/w-Eb2.jpg", "T5": "images/w-T5.jpg", "T12": "images/w-T12.jpg", "C1": "images/w-C1.webp", "T2": "images/w-T2.jpg", "Eb1": "images/w-Eb1.jpg", "T6": "images/w-T6.jpg", "M2": "images/w-M2.webp", "T7": "images/w-T7.jpg", "T8": "images/w-T8.jpg", "C3": "images/w-C3.webp", "T9": "images/w-T9.jpg", "Eb3": "images/w-Eb3.jpg", "T10": "images/w-T10.jpg", "M3": "images/w-M3.jpg", "T11": "images/w-T11.jpg"};
 const g=document.getElementById('gallery');
 let visible=[];
@@ -556,7 +558,7 @@ function render(f){
   g.innerHTML='';visible=works.filter(w=>f==='all'||w.c===f);
   visible.forEach((w,i)=>{
     const fig=document.createElement('figure');
-    fig.innerHTML=`<img loading="lazy" src="${SRC[w.k]}" alt="${esc(w.t)}"><figcaption><i>${esc(w.t)}</i><span translate="no"${w.c==='minyatur'?'':' lang="tr"'}>${esc(w.d)}</span></figcaption>`;
+    fig.innerHTML=`<img loading="lazy" src="${SRC[w.k]}" alt="${esc(w.t)}"><figcaption><div class="cap"><i>${esc(w.t)}</i>${w.h?`<small>Calligraphy: <span translate="no">${esc(w.h)}</span></small>`:''}<small>${esc([w.y,w.s].filter(Boolean).join(' · '))}</small></div><span translate="no"${w.c==='minyatur'?'':' lang="tr"'}>${esc(w.d)}</span></figcaption>`;
     fig.onclick=()=>open(i);g.appendChild(fig);
   });
 }
@@ -567,7 +569,7 @@ document.querySelectorAll('.filters button').forEach(b=>b.onclick=()=>{
 const lb=document.getElementById('lb'),li=document.getElementById('lbimg'),lc=document.getElementById('lbcap');let cur=0;
 let LBL=null;
 function show(){const it=LBL[cur];li.src=it.src;li.alt=it.t;lc.innerHTML=esc(it.t)+(it.d?`<span>${esc(it.d)}</span>`:'');lb.hidden=false}
-function open(i){LBL=visible.map(w=>({src:SRC[w.k],t:w.t,d:w.d}));cur=(i+LBL.length)%LBL.length;show()}
+function open(i){LBL=visible.map(w=>({src:SRC[w.k],t:w.t,d:[w.h?'Calligraphy: '+w.h:'',w.y,w.tk,w.s].filter(Boolean).join(' · ')}));cur=(i+LBL.length)%LBL.length;show()}
 function step(d){cur=(cur+d+LBL.length)%LBL.length;show()}
 ['#exh-photos','#at-photos'].forEach(sel=>{const figs=[...document.querySelectorAll(sel+' figure')];figs.forEach((fg,i)=>fg.onclick=()=>{LBL=figs.map(x=>({src:x.querySelector('img').getAttribute('src'),t:x.querySelector('figcaption').textContent,d:''}));cur=i;show()})});
 lb.querySelector('.x').onclick=()=>lb.hidden=true;
